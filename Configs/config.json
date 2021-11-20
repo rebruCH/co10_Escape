@@ -914,6 +914,16 @@
 				"ISLAND" : "Taunus",
 				"ISLANDNAME" : "Taunus"
 				}
+		},
+		{
+			"name" : "Sefrou-Ramal",
+			"class" : "SefrouRamal",
+			"path" : "./Islands/Sefrou-Ramal/",
+			"replace" :
+				{
+				"ISLAND" : "Sefrou-Ramal",
+				"ISLANDNAME" : "Sefrou-Ramal"
+				}
 		}
 	],
 	"Missions" : [
@@ -976,6 +986,13 @@
 		{
 			"island" : "Gabreta",
 			"sqm" : "Gabreta",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co15_Escape_BIS_NATO_vs_CSAT"
+		},
+		{
+			"island" : "Sefrou-Ramal",
+			"sqm" : "Sefrou-Ramal",
 			"mod" : "Vanilla",
 			"replace" : {},
 			"name" : "co15_Escape_BIS_NATO_vs_CSAT"
@@ -1561,12 +1578,26 @@
 			"replace" : {},
 			"name" : "co15_Escape_BIS_CSAT_vs_NATO"
 		},
+		{
+			"island" : "Sefrou-Ramal",
+			"sqm" : "Sefrou-Ramal",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co15_Escape_BIS_CSAT_vs_NATO"
+		},
         {
 			"island" : "Gabreta",
 			"sqm" : "Gabreta",
 			"mod" : "Vanilla Contact US",
 			"replace" : {},
 			"name" : "co15_Escape_Contact_CSAT_vs_NATO"
+		},
+		{
+			"island" : "Sefrou-Ramal",
+			"sqm" : "Sefrou-Ramal",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co15_Escape_BIS_CSAT_vs_NATO"
 		},
 		{
 			"island" : "Bornholm",
