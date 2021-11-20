@@ -73,9 +73,9 @@ if (isClass(configFile >> "CfgPatches" >> "ACE_Medical")) then {
 
 setTerrainGrid A3E_Param_Grass;
 
-if (A3E_Param_Magrepack == 1) then {
+//if (A3E_Param_Magrepack == 1) then {
 	[] execVM "Scripts\outlw_magRepack\MagRepack_init_sv.sqf";
-};
+//};
 
 
 [] spawn {
@@ -116,3 +116,6 @@ if(!isNil("CBA_fnc_addKeybind")) then {
 		["A3E Earplugs", "toggle_earplugs_key", localize "STR_A3E_initLocalPlayer_toggleEarplugs", {_this call A3E_fnc_toggleEarplugs}, ""] call CBA_fnc_addKeybind;
 	};
 };
+
+// Eigene FUnktionen
+[player] call rebru_fnc_initLocalPlayer;

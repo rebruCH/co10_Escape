@@ -5,7 +5,7 @@ class Params
             title = "Parameter Load and Save (save params between sessions, see readme!)";
             values[] = {0, 1, 2};
             texts[] = {"Use settings below and save (settings will be restored on mission restart)", "Load previously saved settings (Use below if none found)", "Use settings below without saving"};
-            default = 1;
+            default = 2;
 	};
 	class A3E_Param_Spacer1
     {
@@ -20,7 +20,7 @@ class Params
             values[] = {0, 1, 2, 3, 4};
             texts[] = {"Cadet", "Easy", "Normal", "Hard", "Extreme"};
 			livechanges = 1;
-            default = 1;
+            default = 2;
 	};
 	class A3E_Param_EnemyFrequency
 	{
@@ -57,8 +57,8 @@ class Params
 	{
 		title="Search Chopper Type";
 		values[]={0,1,2};
-		texts[]={"Random (Chooses between Easy and Hard Values)","Easy","Hard"};
-		default = 0;
+		texts[]={"Standard","Easy","Hard"};
+		default = 1;
 	};
 	class A3E_Param_Spacer2
     {
@@ -72,7 +72,7 @@ class Params
 	    title="Time Of Day";
 		values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26};
 		texts[]={"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","Random","Daytime","Nighttime"};
-		default = 8;
+		default = 7;
 		//function = "A3E_fnc_paramDaytime"; // (Optional) Function called when player joins, selected value is passed as an argument
 	};
 	class A3E_Param_TimeMultiplier	
@@ -82,7 +82,7 @@ class Params
 		texts[]={"1:1 (Normal)","1:6 (Day = 4 Hours)","1:12 (Day = 2 Hours)","1:24 (Day = 1 Hour)","1:36 (Day = 40 Minutes)"};
 		livechanges = 1;
 		code = "if(isserver) then {setTimeMultiplier _this;};";
-		default = 6;
+		default = 1;
 	};
 	class A3E_Param_WeatherOvercast
 	{
@@ -140,7 +140,7 @@ class Params
 		values[]={5,10,20,30,40,50};
 		texts[]={"5%","10%","20%","30%","40%","50%"};
 		livechanges = 1;
-		default = 20;
+		default = 30;
 	};
 	class A3E_Param_RevealMarkers
 	{
@@ -169,7 +169,7 @@ class Params
 		title="War-Torn mode (CSAT and AAF are fighting each other)";
 		values[]={0,1};
 		texts[]={"Disabled","Enabled"};
-		default = 0;
+		default = 1;
 	};
 	class A3E_Param_ReviveView
 	{
@@ -191,7 +191,7 @@ class Params
 		title="Additional Weaponbox (with less random content) at depots";
 		values[]={0,1};
 		texts[]={"Off", "On"};
-		default = 0;
+		default = 1;
 	};
 	class A3E_Param_NoNightvision
 	{
@@ -283,7 +283,7 @@ class Params
 		title="Mag repack";
 		values[]={0,1};
 		texts[]={"Disabled", "Enabled"};
-		default = 0;
+		default = 1;
 	};
 	class A3E_Param_Spacer7
     {
@@ -299,5 +299,19 @@ class Params
 		texts[]={"Off","On"};
 		livechanges = 1;
 		default = 0;
+	};
+		class A3E_Param_Spacer8
+    {
+            title = "==================== ACP Settings ====================";
+            values[] = {0};
+            texts[] = {""};
+            default = 0;
+	};
+	class ACP_Param_Kisten
+	{
+		title="Kisten erzeugen und befüllen";
+		values[]={0,3,2,1};
+		texts[]={"Aus","Hohe Wahrscheinlichkeit","Mittlere Wahrscheinlichkeit","Niedrige Wahrscheinlichkeit"};
+		default = 3;
 	};
 };

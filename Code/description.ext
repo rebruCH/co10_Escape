@@ -1,22 +1,28 @@
 #include "include\defines.hpp"
+#include "Scripts\HackEX\HKX_dialogs.hpp"
+
+class CfgSounds
+{
+    #include "Scripts\rebru\cfgSounds.hpp"
+};
 
 // Mission Header
 class Header
 {
   gameType = Escape;
   minPlayers = 1;
-  maxPlayers = 10;
+  maxPlayers = 16;
 };
 
 onLoadName = MISSIONNAME;
 onLoadMission = MISSIONNAMEFULL;
 OnLoadMissionTime = FALSE;
-dev = "NeoArmageddon and Scruffy";
+dev = "NeoArmageddon and Scruffy edited by truthCH [MILF]";
 briefingName = MISSIONNAMEFULL;
-author = "NeoArmageddon and Scruffy";
+author = "NeoArmageddon and Scruffy edited by truthCH [MILF]";
 overviewPicture = "a3\Missions_F_Gamma\data\img\MP_COOP_m03_overview_CA.paa";
 overviewText = MISSIONNAMEFULL;
-loadScreen = "escape_banner.paa"; 
+loadScreen = "escape_banner.paa";
 
 EscapeIsland = ISLAND;
 EscapeMod = MOD;
@@ -49,7 +55,7 @@ wreckRemovalMaxTime = 1800; //seconds
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 class CfgDebriefing
-{  
+{
     class End1
     {
         title = $STR_A3E_dbrf_failed;
@@ -95,7 +101,7 @@ class CfgDebriefingSections
 
 
 class CfgRemoteExec
-{        
+{
        // List of script functions allowed to be sent from client via remoteExec
        class Functions
        {
@@ -103,17 +109,19 @@ class CfgRemoteExec
                mode = 2;
                // Ability to send jip messages: 0-disabled, 1-enabled (default)
                jip = 1;
-			   class a3e_fnc_initPlayer { allowedTargets=2; jip=0; };
-       };        
+               class a3e_fnc_initPlayer { allowedTargets=2; jip=0; };
+               class hideObject { allowedTargets=0; jip=1; };
+               class hideObjectGlobal { allowedTargets=2; jip=1; };
+       };
        // List of script commands allowed to be sent from client via remoteExec
        class Commands
        {
               class moveInAny { allowedTargets=0; jip=0; }; // can target anyone, sending jip is turned off (overrides settings in the Commands class)
-	};
+       };
 };
 
 class RscTitles {
-	titles[] = {HSC_View}; 
+	titles[] = {HSC_View};
 	class HSC_View {
 			idd = 620000;
 			duration = 15000;
@@ -125,9 +133,9 @@ class RscTitles {
 				class Rsc_MouseArea {
 					idc = 170001;
 					style = ST_MULTI;
-					
+
 					type = CT_STATIC;
-				
+
 					shadow = 1;
 					colorShadow[] = {0,0,0,0.5};
 					font = "PuristaMedium";
@@ -148,19 +156,19 @@ class RscTitles {
 					onKeyDown = "systemchat str _this;";
 				};
 			};
-			
+
 			class controls {
 				class Rsc_TargetText {
 					idc = 170002;
 					text = $STR_A3E_hindsightCam_unconscious;
 					type = 13;
 					style = 2;
-					  
+
 					x = "SafeZoneX + (SafeZoneW * 0.3)";
 					y = "SafeZoneY + (SafezoneH * 0.8)";
 					w = "(SafeZoneW) * 0.4";
-					h = "SafezoneH * 0.1";  
-					  
+					h = "SafezoneH * 0.1";
+
 					  class Attributes {
 						font = "TahomaB";
 						color = "#000000";
@@ -182,12 +190,12 @@ class RscTitles {
 					text = $STR_A3E_hindsightCam_helpText;
 					type = 13;
 					style = 0;
-					  
+
 					x = "SafeZoneX + (SafeZoneW * 0.02)";
 					y = "SafeZoneY + (SafezoneH * 0.85)";
 					w = "(SafeZoneW) * 0.2";
-					h = "SafezoneH * 0.15";  
-					  
+					h = "SafezoneH * 0.15";
+
 					class Attributes {
 						font = "TahomaB";
 						color = "#000000";

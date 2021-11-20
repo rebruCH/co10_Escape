@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectRootNode Name="Code" FileName="">
+    <SubNodes>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" FileName="functions">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ace" FileName="functions\ace">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ATCam.sqf" FileName="functions\ace\fn_ATCam.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CaptiveHandle.sqf" FileName="functions\ace\fn_CaptiveHandle.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_GroundHandler.sqf" FileName="functions\ace\fn_GroundHandler.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_HandleUnconscious.sqf" FileName="functions\ace\fn_HandleUnconscious.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="AI" FileName="functions\AI">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AddStaticGunner.sqf" FileName="functions\AI\fn_AddStaticGunner.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AquaticPatrol.sqf" FileName="functions\AI\fn_AquaticPatrol.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CallCAS.sqf" FileName="functions\AI\fn_CallCAS.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_EngageReportedGroup.sqf" FileName="functions\AI\fn_EngageReportedGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ExtractionBoat.sqf" FileName="functions\AI\fn_ExtractionBoat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ExtractionCar.sqf" FileName="functions\AI\fn_ExtractionCar.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ExtractionChopper.sqf" FileName="functions\AI\fn_ExtractionChopper.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_FireArtillery.sqf" FileName="functions\AI\fn_FireArtillery.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Flee.sqf" FileName="functions\AI\fn_Flee.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_GetTaskState.sqf" FileName="functions\AI\fn_GetTaskState.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InCombat.sqf" FileName="functions\AI\fn_InCombat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_LeafletDrone.sqf" FileName="functions\AI\fn_LeafletDrone.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Loiter.sqf" FileName="functions\AI\fn_Loiter.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_move.sqf" FileName="functions\AI\fn_move.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_OrderSearch.sqf" FileName="functions\AI\fn_OrderSearch.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Patrol.sqf" FileName="functions\AI\fn_Patrol.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RandomPatrolRoute.sqf" FileName="functions\AI\fn_RandomPatrolRoute.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Search.sqf" FileName="functions\AI\fn_Search.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SearchDrone.sqf" FileName="functions\AI\fn_SearchDrone.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SetTaskState.sqf" FileName="functions\AI\fn_SetTaskState.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Chronos" FileName="functions\Chronos">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Chronos_Dispatch.sqf" FileName="functions\Chronos\fn_Chronos_Dispatch.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Chronos_Init.sqf" FileName="functions\Chronos\fn_Chronos_Init.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Chronos_Register.sqf" FileName="functions\Chronos\fn_Chronos_Register.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Chronos_Run.sqf" FileName="functions\Chronos\fn_Chronos_Run.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Common" FileName="functions\Common">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addUserActions.sqf" FileName="functions\Common\fn_addUserActions.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_bootstrapEscape.sqf" FileName="functions\Common\fn_bootstrapEscape.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_briefing.sqf" FileName="functions\Common\fn_briefing.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_callRandomFunction.sqf" FileName="functions\Common\fn_callRandomFunction.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CheckCampDistance.sqf" FileName="functions\Common\fn_CheckCampDistance.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_checkUnitClasses.sqf" FileName="functions\Common\fn_checkUnitClasses.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_cleanupTerrain.sqf" FileName="functions\Common\fn_cleanupTerrain.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CompileGroupVar.sqf" FileName="functions\Common\fn_CompileGroupVar.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_expandProbabilities.sqf" FileName="functions\Common\fn_expandProbabilities.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_findControl.sqf" FileName="functions\Common\fn_findControl.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_findFlatArea.sqf" FileName="functions\Common\fn_findFlatArea.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_findFlatAreaNear.sqf" FileName="functions\Common\fn_findFlatAreaNear.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_FireSmokeFX.sqf" FileName="functions\Common\fn_FireSmokeFX.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getAssocArrayEntry.sqf" FileName="functions\Common\fn_getAssocArrayEntry.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_GetEnemyCount.sqf" FileName="functions\Common\fn_GetEnemyCount.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getPlayerGroup.sqf" FileName="functions\Common\fn_getPlayerGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_GetPlayers.sqf" FileName="functions\Common\fn_GetPlayers.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getRandomPlayer.sqf" FileName="functions\Common\fn_getRandomPlayer.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getSideColor.sqf" FileName="functions\Common\fn_getSideColor.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_groupChat.sqf" FileName="functions\Common\fn_groupChat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_handleRating.sqf" FileName="functions\Common\fn_handleRating.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_handleScore.sqf" FileName="functions\Common\fn_handleScore.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_healAtBuilding.sqf" FileName="functions\Common\fn_healAtBuilding.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_hijack.sqf" FileName="functions\Common\fn_hijack.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initArsenal.sqf" FileName="functions\Common\fn_initArsenal.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initLocalPlayer.sqf" FileName="functions\Common\fn_initLocalPlayer.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_KeyDown.sqf" FileName="functions\Common\fn_KeyDown.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_onVehicleSpawn.sqf" FileName="functions\Common\fn_onVehicleSpawn.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RandomMarkerPos.sqf" FileName="functions\Common\fn_RandomMarkerPos.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RandomPatrolPos.sqf" FileName="functions\Common\fn_RandomPatrolPos.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RandomSpawnPos.sqf" FileName="functions\Common\fn_RandomSpawnPos.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RotatePosition.sqf" FileName="functions\Common\fn_RotatePosition.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_systemChat.sqf" FileName="functions\Common\fn_systemChat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_toggleEarplugs.sqf" FileName="functions\Common\fn_toggleEarplugs.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_WriteParamBriefing.sqf" FileName="functions\Common\fn_WriteParamBriefing.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Debug" FileName="functions\Debug">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_DebugMsg.sqf" FileName="functions\Debug\fn_DebugMsg.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_drawMapLine.sqf" FileName="functions\Debug\fn_drawMapLine.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getDebugMessages.sqf" FileName="functions\Debug\fn_getDebugMessages.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_log.sqf" FileName="functions\Debug\fn_log.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_logMessage.sqf" FileName="functions\Debug\fn_logMessage.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rptLog.sqf" FileName="functions\Debug\fn_rptLog.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_startDebugView.sqf" FileName="functions\Debug\fn_startDebugView.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_TrackGroup.sqf" FileName="functions\Debug\fn_TrackGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_unit_debug_marker.sqf" FileName="functions\Debug\fn_unit_debug_marker.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="DRN" FileName="functions\DRN">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmbientInfantry.sqf" FileName="functions\DRN\fn_AmbientInfantry.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_DepopulateAquaticPatrol.sqf" FileName="functions\DRN\fn_DepopulateAquaticPatrol.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_DepopulateLocation.sqf" FileName="functions\DRN\fn_DepopulateLocation.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_DepopulateVillage.sqf" FileName="functions\DRN\fn_DepopulateVillage.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_DynamicWeatherEffects.sqf" FileName="functions\DRN\fn_DynamicWeatherEffects.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_GarrisonUnits.sqf" FileName="functions\DRN\fn_GarrisonUnits.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InitAquaticPatrolMarkers.sqf" FileName="functions\DRN\fn_InitAquaticPatrolMarkers.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InitAquaticPatrols.sqf" FileName="functions\DRN\fn_InitAquaticPatrols.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InitGuardedLocations.sqf" FileName="functions\DRN\fn_InitGuardedLocations.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InitVillageMarkers.sqf" FileName="functions\DRN\fn_InitVillageMarkers.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InsertionTruck.sqf" FileName="functions\DRN\fn_InsertionTruck.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MilitaryTraffic.sqf" FileName="functions\DRN\fn_MilitaryTraffic.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MonitorEmptyGroups.sqf" FileName="functions\DRN\fn_MonitorEmptyGroups.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MotorizedSearchGroup.sqf" FileName="functions\DRN\fn_MotorizedSearchGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MoveInfantryGroup.sqf" FileName="functions\DRN\fn_MoveInfantryGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MoveVehicle.sqf" FileName="functions\DRN\fn_MoveVehicle.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PopulateAquaticPatrol.sqf" FileName="functions\DRN\fn_PopulateAquaticPatrol.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PopulateLocation.sqf" FileName="functions\DRN\fn_PopulateLocation.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PopulateVillage.sqf" FileName="functions\DRN\fn_PopulateVillage.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SearchChopper.sqf" FileName="functions\DRN\fn_SearchChopper.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SearchGroup.sqf" FileName="functions\DRN\fn_SearchGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Intel" FileName="functions\Intel">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addIntel.sqf" FileName="functions\Intel\fn_addIntel.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_collectIntel.sqf" FileName="functions\Intel\fn_collectIntel.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RevealPOI.sqf" FileName="functions\Intel\fn_RevealPOI.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="SearchLeader" FileName="functions\SearchLeader">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createKnownPosition.sqf" FileName="functions\SearchLeader\fn_createKnownPosition.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PlayerDetection.sqf" FileName="functions\SearchLeader\fn_PlayerDetection.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_recordSighting.sqf" FileName="functions\SearchLeader\fn_recordSighting.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ReportToHQ.sqf" FileName="functions\SearchLeader\fn_ReportToHQ.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SearchLeader.sqf" FileName="functions\SearchLeader\fn_SearchLeader.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SearchLeaderInit.sqf" FileName="functions\SearchLeader\fn_SearchLeaderInit.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SearchLeaderRadio.sqf" FileName="functions\SearchLeader\fn_SearchLeaderRadio.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Server" FileName="functions\Server">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createAmmoDepots.sqf" FileName="functions\Server\fn_createAmmoDepots.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createComCenters.sqf" FileName="functions\Server\fn_createComCenters.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CreateExtractionPoint.sqf" FileName="functions\Server\fn_CreateExtractionPoint.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createLocationMarker.sqf" FileName="functions\Server\fn_createLocationMarker.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createMortarSites.sqf" FileName="functions\Server\fn_createMortarSites.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createMotorPools.sqf" FileName="functions\Server\fn_createMotorPools.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createStartpos.sqf" FileName="functions\Server\fn_createStartpos.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_endMissionServer.sqf" FileName="functions\Server\fn_endMissionServer.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_FindSpawnRoad.sqf" FileName="functions\Server\fn_FindSpawnRoad.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_firedNearExtraction.sqf" FileName="functions\Server\fn_firedNearExtraction.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getRndEntryFromFaction.sqf" FileName="functions\Server\fn_getRndEntryFromFaction.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initPlayer.sqf" FileName="functions\Server\fn_initPlayer.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initServer.sqf" FileName="functions\Server\fn_initServer.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initTraps.sqf" FileName="functions\Server\fn_initTraps.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_loadFaction.sqf" FileName="functions\Server\fn_loadFaction.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_missionFlow.sqf" FileName="functions\Server\fn_missionFlow.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_parameterInit.sqf" FileName="functions\Server\fn_parameterInit.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RoadBlocks.sqf" FileName="functions\Server\fn_RoadBlocks.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RunExtraction - Kopie.sqf" FileName="functions\Server\fn_RunExtraction - Kopie.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RunExtraction.sqf" FileName="functions\Server\fn_RunExtraction.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RunExtractionBoat.sqf" FileName="functions\Server\fn_RunExtractionBoat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RunExtractionCar.sqf" FileName="functions\Server\fn_RunExtractionCar.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_RunExtractionHeli.sqf" FileName="functions\Server\fn_RunExtractionHeli.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SelectExtractionZone.sqf" FileName="functions\Server\fn_SelectExtractionZone.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_selectFaction.sqf" FileName="functions\Server\fn_selectFaction.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_UpdateLocationMarker.sqf" FileName="functions\Server\fn_UpdateLocationMarker.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_updateTraps.sqf" FileName="functions\Server\fn_updateTraps.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_watchKnownPosition.sqf" FileName="functions\Server\fn_watchKnownPosition.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_weather.sqf" FileName="functions\Server\fn_weather.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Spawning" FileName="functions\Spawning">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_activatePatrolZone.sqf" FileName="functions\Spawning\fn_activatePatrolZone.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_deactivatePatrolZone.sqf" FileName="functions\Spawning\fn_deactivatePatrolZone.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getDynamicSquadsize.sqf" FileName="functions\Spawning\fn_getDynamicSquadsize.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initPatrolZone.sqf" FileName="functions\Spawning\fn_initPatrolZone.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initVillages.sqf" FileName="functions\Spawning\fn_initVillages.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_onEnemySoldierSpawn.sqf" FileName="functions\Spawning\fn_onEnemySoldierSpawn.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnPatrol.sqf" FileName="functions\Spawning\fn_spawnPatrol.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Statistics" FileName="functions\Statistics">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_LoadStatistics.sqf" FileName="functions\Statistics\fn_LoadStatistics.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ParseStatistics.sqf" FileName="functions\Statistics\fn_ParseStatistics.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PingStatistics.sqf" FileName="functions\Statistics\fn_PingStatistics.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SaveStatistics.sqf" FileName="functions\Statistics\fn_SaveStatistics.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_StartStatistics.sqf" FileName="functions\Statistics\fn_StartStatistics.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_WriteStatisticsToBriefing.sqf" FileName="functions\Statistics\fn_WriteStatisticsToBriefing.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Templates" FileName="functions\Templates">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot.sqf" FileName="functions\Templates\fn_AmmoDepot.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot_VN_nva1.sqf" FileName="functions\Templates\fn_AmmoDepot_VN_nva1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot_VN_US1.sqf" FileName="functions\Templates\fn_AmmoDepot_VN_US1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot2.sqf" FileName="functions\Templates\fn_AmmoDepot2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot3.sqf" FileName="functions\Templates\fn_AmmoDepot3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot4.sqf" FileName="functions\Templates\fn_AmmoDepot4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AmmoDepot5.sqf" FileName="functions\Templates\fn_AmmoDepot5.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter.sqf" FileName="functions\Templates\fn_BuildComCenter.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter_vn_nva1.sqf" FileName="functions\Templates\fn_BuildComCenter_vn_nva1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter_vn_nva2.sqf" FileName="functions\Templates\fn_BuildComCenter_vn_nva2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter_vn_us1.sqf" FileName="functions\Templates\fn_BuildComCenter_vn_us1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter_vn_us2.sqf" FileName="functions\Templates\fn_BuildComCenter_vn_us2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter2.sqf" FileName="functions\Templates\fn_BuildComCenter2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter3.sqf" FileName="functions\Templates\fn_BuildComCenter3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter4.sqf" FileName="functions\Templates\fn_BuildComCenter4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildComCenter5.sqf" FileName="functions\Templates\fn_BuildComCenter5.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildMotorPool.sqf" FileName="functions\Templates\fn_BuildMotorPool.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildMotorPool_VN.sqf" FileName="functions\Templates\fn_BuildMotorPool_VN.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildPrison.sqf" FileName="functions\Templates\fn_BuildPrison.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildPrison1.sqf" FileName="functions\Templates\fn_BuildPrison1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildPrison2.sqf" FileName="functions\Templates\fn_BuildPrison2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildPrison3.sqf" FileName="functions\Templates\fn_BuildPrison3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildPrison4.sqf" FileName="functions\Templates\fn_BuildPrison4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_BuildPrison5.sqf" FileName="functions\Templates\fn_BuildPrison5.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CrashSite.sqf" FileName="functions\Templates\fn_CrashSite.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_isoTemplateRestore.sqf" FileName="functions\Templates\fn_isoTemplateRestore.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_isoTemplateStore.sqf" FileName="functions\Templates\fn_isoTemplateStore.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MortarSite.sqf" FileName="functions\Templates\fn_MortarSite.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MortarSite_vn_nva1.sqf" FileName="functions\Templates\fn_MortarSite_vn_nva1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MortarSite_vn_us1.sqf" FileName="functions\Templates\fn_MortarSite_vn_us1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MortarSite2.sqf" FileName="functions\Templates\fn_MortarSite2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Roadblock.sqf" FileName="functions\Templates\fn_Roadblock.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Roadblock_vn1.sqf" FileName="functions\Templates\fn_Roadblock_vn1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Roadblock_vn2.sqf" FileName="functions\Templates\fn_Roadblock_vn2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Roadblock2.sqf" FileName="functions\Templates\fn_Roadblock2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Roadblock3.sqf" FileName="functions\Templates\fn_Roadblock3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Roadblock4.sqf" FileName="functions\Templates\fn_Roadblock4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Weather" FileName="functions\Weather">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="randomWeather2.sqf" FileName="functions\Weather\randomWeather2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Revive" FileName="Revive">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" FileName="Revive\functions">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="HSC" FileName="Revive\functions\HSC">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_attempRespawn.sqf" FileName="Revive\functions\HSC\fn_attempRespawn.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_camLoop.sqf" FileName="Revive\functions\HSC\fn_camLoop.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createCam.sqf" FileName="Revive\functions\HSC\fn_createCam.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_cycleEntity.sqf" FileName="Revive\functions\HSC\fn_cycleEntity.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_exit.sqf" FileName="Revive\functions\HSC\fn_exit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getKeyState.sqf" FileName="Revive\functions\HSC\fn_getKeyState.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_keydown.sqf" FileName="Revive\functions\HSC\fn_keydown.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_mouseKeyClick.sqf" FileName="Revive\functions\HSC\fn_mouseKeyClick.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_mouseMove.sqf" FileName="Revive\functions\HSC\fn_mouseMove.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_mouseZMove.sqf" FileName="Revive\functions\HSC\fn_mouseZMove.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_respawn.sqf" FileName="Revive\functions\HSC\fn_respawn.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rotateVector.sqf" FileName="Revive\functions\HSC\fn_rotateVector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_targetEnemysNear.sqf" FileName="Revive\functions\HSC\fn_targetEnemysNear.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_targetUnconscious.sqf" FileName="Revive\functions\HSC\fn_targetUnconscious.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_toggleNV.sqf" FileName="Revive\functions\HSC\fn_toggleNV.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_updateCam.sqf" FileName="Revive\functions\HSC\fn_updateCam.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_updatePerspective.sqf" FileName="Revive\functions\HSC\fn_updatePerspective.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_updateText.sqf" FileName="Revive\functions\HSC\fn_updateText.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Revive" FileName="Revive\functions\Revive">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Actions.sqf" FileName="Revive\functions\Revive\fn_Actions.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_AddVehicleWatchdog.sqf" FileName="Revive\functions\Revive\fn_AddVehicleWatchdog.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Check_Pullout.sqf" FileName="Revive\functions\Revive\fn_Check_Pullout.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Check_Putin.sqf" FileName="Revive\functions\Revive\fn_Check_Putin.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Check_Revive.sqf" FileName="Revive\functions\Revive\fn_Check_Revive.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Check_Revive_FAK.sqf" FileName="Revive\functions\Revive\fn_Check_Revive_FAK.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_CopyGear.sqf" FileName="Revive\functions\Revive\fn_CopyGear.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Drag.sqf" FileName="Revive\functions\Revive\fn_Drag.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_FixRotation.sqf" FileName="Revive\functions\Revive\fn_FixRotation.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_HandleDamage.sqf" FileName="Revive\functions\Revive\fn_HandleDamage.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_HandleRevive.sqf" FileName="Revive\functions\Revive\fn_HandleRevive.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Hide.sqf" FileName="Revive\functions\Revive\fn_Hide.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InitPlayer.sqf" FileName="Revive\functions\Revive\fn_InitPlayer.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_InstantRevive.sqf" FileName="Revive\functions\Revive\fn_InstantRevive.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_MoveInjuredInVehicle.sqf" FileName="Revive\functions\Revive\fn_MoveInjuredInVehicle.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PullOutVehicle.sqf" FileName="Revive\functions\Revive\fn_PullOutVehicle.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_PutInVehicle.sqf" FileName="Revive\functions\Revive\fn_PutInVehicle.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Ragdoll.sqf" FileName="Revive\functions\Revive\fn_Ragdoll.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Release.sqf" FileName="Revive\functions\Revive\fn_Release.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ReviveInit.sqf" FileName="Revive\functions\Revive\fn_ReviveInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_SwitchVehicleDeadAnimation.sqf" FileName="Revive\functions\Revive\fn_SwitchVehicleDeadAnimation.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_Unconscious.sqf" FileName="Revive\functions\Revive\fn_Unconscious.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_WashAshore.sqf" FileName="Revive\functions\Revive\fn_WashAshore.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_WatchVehicle.sqf" FileName="Revive\functions\Revive\fn_WatchVehicle.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Scripts" FileName="Scripts">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="acp" FileName="Scripts\acp">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" FileName="Scripts\acp\functions">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="caves" FileName="Scripts\acp\functions\caves">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addItemsToObjects.sqf" FileName="Scripts\acp\functions\caves\fn_addItemsToObjects.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="bomb" FileName="Scripts\bomb">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" FileName="Scripts\bomb\functions">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ace3_actionCutWire.sqf" FileName="Scripts\bomb\functions\fn_ace3_actionCutWire.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ace3_actionDefuse.sqf" FileName="Scripts\bomb\functions\fn_ace3_actionDefuse.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ace3_enabled.sqf" FileName="Scripts\bomb\functions\fn_ace3_enabled.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_actionCutWire.sqf" FileName="Scripts\bomb\functions\fn_actionCutWire.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_actionDefuse.sqf" FileName="Scripts\bomb\functions\fn_actionDefuse.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_attachObjects.sqf" FileName="Scripts\bomb\functions\fn_attachObjects.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createMatrix.sqf" FileName="Scripts\bomb\functions\fn_createMatrix.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_defuseFail.sqf" FileName="Scripts\bomb\functions\fn_defuseFail.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_defuseSuccess.sqf" FileName="Scripts\bomb\functions\fn_defuseSuccess.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getCondition.sqf" FileName="Scripts\bomb\functions\fn_getCondition.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getHotWire.sqf" FileName="Scripts\bomb\functions\fn_getHotWire.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_isExpert.sqf" FileName="Scripts\bomb\functions\fn_isExpert.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_soundLoop.sqf" FileName="Scripts\bomb\functions\fn_soundLoop.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="bomb.sqf" FileName="Scripts\bomb\bomb.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="settings.sqf" FileName="Scripts\bomb\settings.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="DRN" FileName="Scripts\DRN">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="CommonLib" FileName="Scripts\DRN\CommonLib">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CommonLib.sqf" FileName="Scripts\DRN\CommonLib\CommonLib.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Escape" FileName="Scripts\Escape">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="AIskills.sqf" FileName="Scripts\Escape\AIskills.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CivilEnemy.sqf" FileName="Scripts\Escape\CivilEnemy.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CreateCivilEnemy.sqf" FileName="Scripts\Escape\CreateCivilEnemy.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CreateDropChopper.sqf" FileName="Scripts\Escape\CreateDropChopper.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CreateMotorizedSearchGroup.sqf" FileName="Scripts\Escape\CreateMotorizedSearchGroup.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CreateReinforcementTruck.sqf" FileName="Scripts\Escape\CreateReinforcementTruck.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="CreateSearchChopper.sqf" FileName="Scripts\Escape\CreateSearchChopper.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="DropChopper.sqf" FileName="Scripts\Escape\DropChopper.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="EscapeSurprises.sqf" FileName="Scripts\Escape\EscapeSurprises.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="Functions.sqf" FileName="Scripts\Escape\Functions.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="SearchLeader.sqf" FileName="Scripts\Escape\SearchLeader.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="StaticWeatherEffects.sqf" FileName="Scripts\Escape\StaticWeatherEffects.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="HackEX" FileName="Scripts\HackEX">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="apps" FileName="Scripts\HackEX\apps">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="powerplant" FileName="Scripts\HackEX\apps\powerplant">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_appPowerPlant.sqf" FileName="Scripts\HackEX\apps\powerplant\fn_appPowerPlant.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="textviewer" FileName="Scripts\HackEX\apps\textviewer">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_appFileViewer.sqf" FileName="Scripts\HackEX\apps\textviewer\fn_appFileViewer.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="command_line" FileName="Scripts\HackEX\command_line">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="commands" FileName="Scripts\HackEX\command_line\commands">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_clCmdHelp.sqf" FileName="Scripts\HackEX\command_line\commands\fn_clCmdHelp.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_clCmdRun.sqf" FileName="Scripts\HackEX\command_line\commands\fn_clCmdRun.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initCLSession.sqf" FileName="Scripts\HackEX\command_line\fn_initCLSession.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_print.sqf" FileName="Scripts\HackEX\command_line\fn_print.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_printf.sqf" FileName="Scripts\HackEX\command_line\fn_printf.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_processCLCommand.sqf" FileName="Scripts\HackEX\command_line\fn_processCLCommand.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_processCLUserInput.sqf" FileName="Scripts\HackEX\command_line\fn_processCLUserInput.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_updateCLDisplay.sqf" FileName="Scripts\HackEX\command_line\fn_updateCLDisplay.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="config" FileName="Scripts\HackEX\config">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="terminals" FileName="Scripts\HackEX\config\terminals">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="terminal.sqf" FileName="Scripts\HackEX\config\terminals\terminal.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="file" FileName="Scripts\HackEX\file">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_existsFile.sqf" FileName="Scripts\HackEX\file\fn_existsFile.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_openFile.sqf" FileName="Scripts\HackEX\file\fn_openFile.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="input" FileName="Scripts\HackEX\input">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_dikToChar.sqf" FileName="Scripts\HackEX\input\fn_dikToChar.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="terminal" FileName="Scripts\HackEX\terminal">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addActionTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_addActionTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_bootTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_bootTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_closeTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_closeTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_getTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_openTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_openTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_saveTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_saveTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_shutdownTerminal.sqf" FileName="Scripts\HackEX\terminal\fn_shutdownTerminal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="hackex.sqf" FileName="Scripts\HackEX\hackex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="outlw_magRepack" FileName="Scripts\outlw_magRepack">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Scripts" FileName="Scripts\outlw_magRepack\Scripts">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="MagRepack_Keybindings.sqf" FileName="Scripts\outlw_magRepack\Scripts\MagRepack_Keybindings.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="MagRepack_Main.sqf" FileName="Scripts\outlw_magRepack\Scripts\MagRepack_Main.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="MagRepack_Misc.sqf" FileName="Scripts\outlw_magRepack\Scripts\MagRepack_Misc.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="MagRepack_init_sv.sqf" FileName="Scripts\outlw_magRepack\MagRepack_init_sv.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="rebru" FileName="Scripts\rebru">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="events" FileName="Scripts\rebru\events">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_eventFiredMan.sqf" FileName="Scripts\rebru\events\fn_eventFiredMan.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" FileName="Scripts\rebru\functions">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="bomb" FileName="Scripts\rebru\functions\bomb">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addBombToVehicle.sqf" FileName="Scripts\rebru\functions\bomb\fn_addBombToVehicle.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_protectVehicleWithBomb.sqf" FileName="Scripts\rebru\functions\bomb\fn_protectVehicleWithBomb.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="common" FileName="Scripts\rebru\functions\common">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_generatePassword.sqf" FileName="Scripts\rebru\functions\common\fn_generatePassword.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="drop" FileName="Scripts\rebru\functions\drop">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_callDrop.sqf" FileName="Scripts\rebru\functions\drop\fn_callDrop.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_dropCargo.sqf" FileName="Scripts\rebru\functions\drop\fn_dropCargo.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getOppositeDirection.sqf" FileName="Scripts\rebru\functions\drop\fn_getOppositeDirection.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getPosition.sqf" FileName="Scripts\rebru\functions\drop\fn_getPosition.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_paraCargo.sqf" FileName="Scripts\rebru\functions\drop\fn_paraCargo.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setVelocity.sqf" FileName="Scripts\rebru\functions\drop\fn_setVelocity.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="environment" FileName="Scripts\rebru\functions\environment">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_buildCabinet.sqf" FileName="Scripts\rebru\functions\environment\fn_buildCabinet.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_buildLaptop.sqf" FileName="Scripts\rebru\functions\environment\fn_buildLaptop.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_buildLaptops.sqf" FileName="Scripts\rebru\functions\environment\fn_buildLaptops.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_earPlugs.sqf" FileName="Scripts\rebru\functions\environment\fn_earPlugs.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getLocations.sqf" FileName="Scripts\rebru\functions\environment\fn_getLocations.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getObjects.sqf" FileName="Scripts\rebru\functions\environment\fn_getObjects.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setLock.sqf" FileName="Scripts\rebru\functions\environment\fn_setLock.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_switchLights.sqf" FileName="Scripts\rebru\functions\environment\fn_switchLights.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="escape" FileName="Scripts\rebru\functions\escape">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getPOIS.sqf" FileName="Scripts\rebru\functions\escape\fn_getPOIS.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_hackPOIS.sqf" FileName="Scripts\rebru\functions\escape\fn_hackPOIS.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="hacking" FileName="Scripts\rebru\functions\hacking">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_hackingCustomCommands.sqf" FileName="Scripts\rebru\functions\hacking\fn_hackingCustomCommands.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_hackingFiles.sqf" FileName="Scripts\rebru\functions\hacking\fn_hackingFiles.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_hackingUsers.sqf" FileName="Scripts\rebru\functions\hacking\fn_hackingUsers.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="reinforcement" FileName="Scripts\rebru\functions\reinforcement">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_callReinforcement.sqf" FileName="Scripts\rebru\functions\reinforcement\fn_callReinforcement.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="support" FileName="Scripts\rebru\functions\support">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addSupportTerminal.sqf" FileName="Scripts\rebru\functions\support\fn_addSupportTerminal.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_callSupportVehicles.sqf" FileName="Scripts\rebru\functions\support\fn_callSupportVehicles.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="textfiles" FileName="Scripts\rebru\functions\textfiles">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_textfileLager.sqf" FileName="Scripts\rebru\functions\textfiles\fn_textfileLager.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_textfileLocations.sqf" FileName="Scripts\rebru\functions\textfiles\fn_textfileLocations.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_textfilePasswd.sqf" FileName="Scripts\rebru\functions\textfiles\fn_textfilePasswd.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="vdog" FileName="Scripts\rebru\functions\vdog">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnDogs.sqf" FileName="Scripts\rebru\functions\vdog\fn_spawnDogs.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initLocalPlayer.sqf" FileName="Scripts\rebru\functions\fn_initLocalPlayer.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initServer.sqf" FileName="Scripts\rebru\functions\fn_initServer.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="tort" FileName="Scripts\tort">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="tort_DynamicWeather.sqf" FileName="Scripts\tort\tort_DynamicWeather.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="vDog" FileName="Scripts\vDog">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vDogFeral.sqf" FileName="Scripts\vDog\vDogFeral.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vDogPatrol.sqf" FileName="Scripts\vDog\vDogPatrol.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cba_settings.sqf" FileName="cba_settings.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="config.sqf" FileName="config.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="description.ext" FileName="description.ext">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init.sqf" FileName="init.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="XEH_preInit.sqf" FileName="XEH_preInit.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+    </SubNodes>
+  </ProjectRootNode>
+  <FilteredAnalyzerResultItems />
+</Project>

@@ -3,7 +3,7 @@
 @echo off
 
 :: Change this pathes to the correct folders on your drive
-set source=C:\Path\To\Git\Repository
+set source=F:\#ArmaScripting\#escape\Repository
 set target=C:\Users\YourName\Documents\Arma 3 - Other Profiles\YourNickname\missions\Escape_Dev.Stratis
 
 :: Change this to correct entries from the Configs (in the Git repository Config folder)

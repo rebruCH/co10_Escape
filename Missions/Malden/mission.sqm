@@ -113,27 +113,26 @@ class Mission
 			side="{* PLAYERSIDE *}";
 			class Entities
 			{
-				items=10;
+				items=15;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1742.8456,3.6084223,12209.068};
-						angles[]={0.056739714,0,6.2288389};
+						position[]={0,0,0};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="COLONEL";
+						rank="CAPTAIN";
 						init="{* PLAYER_INIT *}";
 						name="p1";
 						isPlayer=1;
 						isPlayable=1;
 					};
-					id=1;
+					id=1001;
 					type="{* PLAYERUNIT_1 *}";
 				};
 				class Item1
@@ -141,20 +140,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1739.7333,3.6954544,12209.226};
-						angles[]={6.2727871,0,0.012798273};
+						position[]={1,0,1};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="MAJOR";
+						rank="LIEUTENANT";
 						init="{* PLAYER_INIT *}";
 						name="p2";
 						isPlayable=1;
 					};
-					id=2;
+					id=1002;
 					type="{* PLAYERUNIT_2 *}";
 				};
 				class Item2
@@ -162,41 +160,39 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1739.6473,3.6801345,12207.858};
-						angles[]={6.2727871,0,0.012798273};
+						position[]={2,0,2};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="LIEUTENANT";
+						rank="SERGEANT";
 						init="{* PLAYER_INIT *}";
 						name="p3";
 						isPlayable=1;
 					};
-					id=3;
-					type="{* PLAYERUNIT_3 *}";
+					id=1003;
+					type="{* PLAYERUNIT_10 *}";
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1740.4403,3.6780088,12206.679};
-						angles[]={6.2727871,0,0.012798273};
+						position[]={3,0,3};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CAPTAIN";
+						rank="SERGEANT";
 						init="{* PLAYER_INIT *}";
 						name="p4";
 						isPlayable=1;
 					};
-					id=4;
+					id=1004;
 					type="{* PLAYERUNIT_4 *}";
 				};
 				class Item4
@@ -204,20 +200,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1741.5585,3.684412,12205.918};
-						angles[]={6.2727871,0,0.012798273};
+						position[]={4,0,4};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="LIEUTENANT";
+						rank="SERGEANT";
 						init="{* PLAYER_INIT *}";
 						name="p5";
 						isPlayable=1;
 					};
-					id=5;
+					id=1005;
 					type="{* PLAYERUNIT_5 *}";
 				};
 				class Item5
@@ -225,8 +220,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1743.0145,3.7035494,12205.966};
-						angles[]={6.2727871,0,0.012798273};
+						position[]={5,0,5};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
@@ -238,16 +232,15 @@ class Mission
 						name="p6";
 						isPlayable=1;
 					};
-					id=6;
-					type="{* PLAYERUNIT_6 *}";
+					id=1006;
+					type="{* PLAYERUNIT_5 *}";
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1744.5018,3.6742368,12206.323};
-						angles[]={0.056739714,0,6.2288389};
+						position[]={6,0,6};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
@@ -259,79 +252,174 @@ class Mission
 						name="p7";
 						isPlayable=1;
 					};
-					id=7;
-					type="{* PLAYERUNIT_7 *}";
-					atlOffset=4.7683716e-007;
+					id=1007;
+					type="{* PLAYERUNIT_5 *}";
 				};
 				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1745.5458,3.5697374,12207.163};
-						angles[]={0.056739714,0,6.2288389};
+						position[]={7,0,7};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
+						rank="SERGEANT";
 						init="{* PLAYER_INIT *}";
 						name="p8";
 						isPlayable=1;
 					};
-					id=8;
-					type="{* PLAYERUNIT_8 *}";
-					atlOffset=4.7683716e-007;
+					id=1008;
+					type="{* PLAYERUNIT_5 *}";
 				};
 				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1746.1141,3.4717345,12208.344};
-						angles[]={0.056739714,0,6.2288389};
+						position[]={8,0,8};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						rank="LIEUTENANT";
 						init="{* PLAYER_INIT *}";
 						name="p9";
 						isPlayable=1;
 					};
-					id=9;
-					type="{* PLAYERUNIT_9 *}";
-					atlOffset=4.7683716e-007;
+					id=1009;
+					type="{* PLAYERUNIT_2 *}";
 				};
 				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1745.9325,3.4027534,12209.732};
-						angles[]={0.056739714,0,6.2288389};
+						position[]={9,0,9};
 					};
 					side="{* PLAYERSIDE *}";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
+						rank="SERGEANT";
 						init="{* PLAYER_INIT *}";
 						name="p10";
 						isPlayable=1;
 					};
-					id=10;
+					id=1010;
 					type="{* PLAYERUNIT_10 *}";
-					atlOffset=4.7683716e-007;
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10,0,10};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="{* PLAYER_INIT *}";
+						name="p11";
+						isPlayable=1;
+					};
+					id=1011;
+					type="{* PLAYERUNIT_4 *}";
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={11,0,11};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="{* PLAYER_INIT *}";
+						name="p12";
+						isPlayable=1;
+					};
+					id=1012;
+					type="{* PLAYERUNIT_5 *}";
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12,0,12};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="{* PLAYER_INIT *}";
+						name="p13";
+						isPlayable=1;
+					};
+					id=1013;
+					type="{* PLAYERUNIT_5 *}";
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13,0,13};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="{* PLAYER_INIT *}";
+						name="p14";
+						isPlayable=1;
+					};
+					id=1014;
+					type="{* PLAYERUNIT_5 *}";
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14,0,14};
+					};
+					side="{* PLAYERSIDE *}";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="{* PLAYER_INIT *}";
+						name="p15";
+						isPlayable=1;
+					};
+					id=1015;
+					type="{* PLAYERUNIT_5 *}";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=0;
+			id=46;
 		};
 		class Item2
 		{

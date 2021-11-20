@@ -1,5 +1,9 @@
 class CfgFunctions
 {
+  #include "..\Scripts\bomb\cfgFunctions.hpp"
+  #include "..\Scripts\rebru\cfgFunctions.hpp"
+  #include "..\Scripts\HackEX\HKX_cfgFunctions.hpp"
+  #include "..\Scripts\ACP\cfgFunctions.hpp"
   class A3E
   {
     class Common
@@ -31,14 +35,14 @@ class CfgFunctions
 		class GetPlayerGroup {};
 		class CallRandomFunction {};
 		class Briefing {
-		
+
 		//	postInit = 1;
 		};
 		class InitLocalPlayer {
 #ifndef A3E_EDITOR
 			postInit = 0;
 #endif
-		};			
+		};
 		class cleanupTerrain {};
 		class handleRating {};
 		class handleScore {};
@@ -93,7 +97,7 @@ class CfgFunctions
             };
 			class initPlayer {};
 			class watchKnownPosition {};
-			class parameterInit {}; 
+			class parameterInit {};
             class createComCenters {};
             class createMotorPools {};
             class createAmmoDepots {};
@@ -142,16 +146,16 @@ class CfgFunctions
 			class AmmoDepot2 {};
 			class AmmoDepot3 {};
 			class AmmoDepot4 {};
-			class AmmoDepot5 {};			
+			class AmmoDepot5 {};
 			class CrashSite {};
 			class MortarSite {};
 			class MortarSite2 {};
 			class Roadblock {};
 			class Roadblock2 {};
 			class Roadblock3 {};
-			class Roadblock4 {};	
-			class isoTemplateStore {};		
-			class isoTemplateRestore {};	
+			class Roadblock4 {};
+			class isoTemplateStore {};
+			class isoTemplateRestore {};
 		};
 		class Chronos
 		{
@@ -178,15 +182,15 @@ class CfgFunctions
 			class SearchLeaderInit {};
 			class SearchLeaderRadio {};
 			class CreateKnownPosition {};
-			
+
 		};
 	};
 	class drn
 	{
 		class DRN
 		{
-			class AmbientInfantry {}; 
-			class MoveInfantryGroup {}; 
+			class AmbientInfantry {};
+			class MoveInfantryGroup {};
 			class MonitorEmptyGroups {};
 			class PopulateLocation {};
 			class DepopulateLocation {};
@@ -194,7 +198,7 @@ class CfgFunctions
 			class InsertionTruck {};
 			class MilitaryTraffic {};
 			class MoveVehicle {};
-			class MotorizedSearchGroup {};	
+			class MotorizedSearchGroup {};
 			class SearchChopper {};
 			class SearchGroup {};
 			class InitVillageMarkers{};
