@@ -96,7 +96,10 @@ switch (A3E_Param_TimeOfDay) do {
 	};
     default { _hour = A3E_Param_TimeOfDay };
 };
+_month = A3E_Param_MonthOfYear;
+
 _date = date;
+_date set [1,_month];
 _date set [3,_hour];
 _date set [4,0];
 

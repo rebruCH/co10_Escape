@@ -31,6 +31,7 @@ if(_playerId == "76561198143409169" or _playerId == "_SP_PLAYER_") then {
 };
 
 /* Settings für Stamina und Fatigue */
+/*
 if(A3E_Param_FatigueDisabled) then {
 	_player enableFatigue false;
 };
@@ -38,3 +39,4 @@ if(A3E_Param_FatigueDisabled) then {
 if(A3E_Param_StaminaDisabled) then {
 	_player enableStamina false;
 };
+*/

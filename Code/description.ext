@@ -1,5 +1,7 @@
 #include "include\defines.hpp"
 #include "Scripts\HackEX\HKX_dialogs.hpp"
+#include "Scripts\rebru\gui\defines.hpp"
+#include "Scripts\rebru\gui\controls.hpp"
 
 class CfgSounds
 {
@@ -17,9 +19,9 @@ class Header
 onLoadName = MISSIONNAME;
 onLoadMission = MISSIONNAMEFULL;
 OnLoadMissionTime = FALSE;
-dev = "NeoArmageddon and Scruffy edited by truthCH [MILF]";
+dev = "NeoArmageddon and Scruffy edited by truth[MILF]";
 briefingName = MISSIONNAMEFULL;
-author = "NeoArmageddon and Scruffy edited by truthCH [MILF]";
+author = "NeoArmageddon and Scruffy edited by truth[MILF]";
 overviewPicture = "a3\Missions_F_Gamma\data\img\MP_COOP_m03_overview_CA.paa";
 overviewText = MISSIONNAMEFULL;
 loadScreen = "escape_banner.paa";

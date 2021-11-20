@@ -60,12 +60,40 @@ class Params
 		texts[]={"Standard","Easy","Hard"};
 		default = 1;
 	};
+	class A3E_Param_Searchdrone 
+	{
+		title="SearchDrone";
+		values[]={0,1};
+		texts[]={"Disabled","Enabled"};
+		default = 0;		
+	};
+	class A3E_Param_StaminaDisabled
+	{
+		title="Disabled Stamina";
+		values[]={0,1};
+		texts[]={"Disabled","Enabled"};
+		default = 1;		
+	};
+	class A3E_Param_FatigueDisabled
+	{
+		title="Disabled Fatigue";
+		values[]={0,1};
+		texts[]={"Disabled","Enabled"};
+		default = 1;		
+	};
 	class A3E_Param_Spacer2
     {
             title = "==================== Environment Settings ====================";
             values[] = {0};
             texts[] = {""};
             default = 0;
+	};
+	class A3E_Param_MonthOfYear	
+	{	
+	    title="Month of Year";
+		values[]={1,2,3,4,5,6,7,8,9,10,11,12};
+		texts[]={"Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"};
+		default = 7;
 	};
 	class A3E_Param_TimeOfDay	
 	{	
@@ -312,6 +340,6 @@ class Params
 		title="Kisten erzeugen und befüllen";
 		values[]={0,3,2,1};
 		texts[]={"Aus","Hohe Wahrscheinlichkeit","Mittlere Wahrscheinlichkeit","Niedrige Wahrscheinlichkeit"};
-		default = 3;
+		default = 2;
 	};
 };

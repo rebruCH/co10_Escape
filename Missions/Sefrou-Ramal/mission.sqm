@@ -606,6 +606,9 @@ class Mission
 					type="{* PLAYERUNIT_5 *}";
 				};
 			};
+			class Attributes
+			{
+			};
 			id=21;
 		};
 		class Item22
