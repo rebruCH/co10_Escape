@@ -20,7 +20,8 @@
 		"./Configs/subconfig_example.json",
 		"./Configs/CUP.json",
 		"./Configs/SOGPF.json",
-		"./Configs/GM.json"
+		"./Configs/GM.json",
+		"./Configs/SOGPF.json"
 	],
 	"replace" :
 		{
