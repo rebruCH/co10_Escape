@@ -2,6 +2,9 @@ params["_player"];
 private["_placed"];
 
 
+// Player immortal
+[_player, false] remoteExec ["allowDamage", _player, false];
+
 diag_log format["fn_initPlayer run for %1", name _player];
 
 
@@ -64,3 +67,5 @@ waituntil{!isNil("A3E_EscapeHasStarted")};
 
 [_player, false] remoteExec ["setCaptive", _player, false];
 
+// Player mortal
+[_player, true] remoteExec ["allowDamage", _player, false];

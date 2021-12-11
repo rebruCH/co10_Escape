@@ -20,7 +20,7 @@ params ["_Objeckt","_sichtbarkeit","_House","_pos","_W"];
 _pos001 = [_pos select 0,_pos select 1,(_pos select 2) + 1];
 
 //----test
-_Name = "Marker" + str(Random 10000);_001 = createMarker [_Name,(getpos _House)];_Name setMarkerType "mil_box";_Name setMarkerColor "ColorOrange";
+//_Name = "Marker" + str(Random 10000);_001 = createMarker [_Name,(getpos _House)];_Name setMarkerType "mil_box";_Name setMarkerColor "ColorOrange";
 //-------
 
 //-----Kisten-auswahl-------------------------------------------------------------------------------------------------
