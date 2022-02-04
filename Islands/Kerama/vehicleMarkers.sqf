@@ -59,8 +59,6 @@ a3e_carSpawners set [56, [[9976.19,14998.8,0], 359.65]];
 a3e_carSpawners set [57, [[8616.22,14725.3,0], 359.65]];
 a3e_carSpawners set [58, [[8648.88,14732.2,0], 359.65]];
 a3e_airSpawners = [];
-a3e_waterSpawners = [];
- No newline at end of file
 a3e_airSpawners set [0, [[12539.6,5986.66,0], 40.4431]];
 a3e_airSpawners set [1, [[12535.8,6023.34,0], 104.684]];
 a3e_airSpawners set [2, [[12532.8,6075.22,0], 105.946]];
