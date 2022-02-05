@@ -445,6 +445,11 @@ class Mission
 					type="{* PLAYERUNIT_5 *}";
 				};
 			};
+			class Attributes
+			{
+
+			};
+			id=88;
 		};
 		class Item4
 		{
