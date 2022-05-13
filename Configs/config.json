@@ -606,6 +606,16 @@
 				}
 		},
 		{
+			"name" : "Taviana",
+			"class" : "Taviana",
+			"path" : "./Islands/Taviana/",
+			"replace" :
+				{
+				"ISLAND" : "Taviana",
+				"ISLANDNAME" : "Taviana"
+				}
+		},
+		{
 			"name" : "Valtatie 5",
 			"class" : "VT5",
 			"path" : "./Islands/VT5/",

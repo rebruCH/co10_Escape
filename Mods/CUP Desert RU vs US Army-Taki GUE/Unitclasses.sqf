@@ -1453,7 +1453,11 @@ a3e_arr_ComCenDefence_lightArmorClasses = [
 	,"CUP_B_RG31_Mk19_USA"];
 // Random array. Heavy armored vehicles guarding the communication centers.
 a3e_arr_ComCenDefence_heavyArmorClasses = [
-	"CUP_B_M1A2_TUSK_MG_DES_US_Army"];
+	"CUP_B_M2Bradley_USA_D"
+	,"CUP_B_M2A3Bradley_USA_D"
+	,"CUP_B_M7Bradley_USA_D"
+
+];
 
 // A communication center contains two static weapons (in two corners of the communication center).
 // Random array. Possible static weapon types for communication centers.
