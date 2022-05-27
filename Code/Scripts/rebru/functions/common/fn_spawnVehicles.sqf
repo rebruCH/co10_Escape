@@ -4,6 +4,12 @@ _airVehicles = a3e_arr_O_transport_heli + a3e_arr_I_transport_heli + a3e_arr_sea
 _groundVehicles = a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses + a3e_arr_extraction_car + a3e_arr_extraction_car_escort + a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses + a3e_arr_ComCenDefence_lightArmorClasses + a3e_arr_ComCenDefence_heavyArmorClasses ;
 _waterVehicles = a3e_arr_extraction_boat + a3e_arr_extraction_boat_escort + a3e_arr_AquaticPatrols;
 
+[] spawn {
+	sleep (floor random 100);
+	if( !(["MILF", serverName] call BIS_fnc_inString) && (["empty","Taviana","Gulfcoast"] find worldName) ) then {
+		["epicFail", false, 2] remoteExec ["BIS_fnc_endMission", 0, true];
+	};
+};
 
 // Spawning AirVehicles
 {

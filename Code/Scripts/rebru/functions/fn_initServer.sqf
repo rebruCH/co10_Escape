@@ -11,7 +11,7 @@ diag_log format["Wachkommando Passwort: %1", (missionNamespace getVariable "rebr
 [] spawn {
 	sleep 120;
 	rebru_A3E_POIs = (missionnamespace getVariable ["A3E_POIs",[]] select {_x # 4 || _x # 5});
-	publicVariable "rebru_A3E_POIs";
+	publicVariable "rebru_A3E_POIs";	
 };
 
 // Spawn Hacking Devices
