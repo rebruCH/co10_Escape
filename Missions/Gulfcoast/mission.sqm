@@ -96,7 +96,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=55;
+		items=56;
 		class Item0
 		{
 			dataType="Marker";
