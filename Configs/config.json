@@ -616,6 +616,16 @@
 				}
 		},
 		{
+			"name" : "Gulfcoast",
+			"class" : "Gulfcoast",
+			"path" : "./Islands/Gulfcoast/",
+			"replace" :
+				{
+				"ISLAND" : "Gulfcoast",
+				"ISLANDNAME" : "Gulfcoast"
+				}
+		},
+		{
 			"name" : "Valtatie 5",
 			"class" : "VT5",
 			"path" : "./Islands/VT5/",

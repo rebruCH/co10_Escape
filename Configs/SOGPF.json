@@ -220,6 +220,20 @@
 			"mod" : "SOGPF PAVN vs MACV-ARVN",
 			"replace" : {},
 			"name" : "co15_Escape_SOGPF_PAVN_vs_MACV_and_ARVN"
+		},
+		{
+			"island" : "Gulfcoast",
+			"sqm": "Gulfcoast",
+			"mod" : "SOGPF MACV vs PAVN-VC",
+			"replace" : {},
+			"name" : "co15_Escape_SOGPF_MACV_vs_PAVN_and_VC"
+		},
+		{
+			"island" : "Gulfcoast",
+			"sqm": "Gulfcoast",
+			"mod" : "SOGPF PAVN vs MACV-ARVN",
+			"replace" : {},
+			"name" : "co15_Escape_SOGPF_PAVN_vs_MACV_and_ARVN"
 		}
 		
 	],

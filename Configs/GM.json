@@ -351,6 +351,13 @@
 			"name" : "co15_Escape_GM_NVA_vs_BW"
 		},
 		{
+			"island" : "Gulfcoast",
+			"sqm": "Gulfcoast",
+			"mod" : "GM BW",
+			"replace" : {},
+			"name" : "co15_Escape_GM_NVA_vs_BW"
+		},
+		{
 			"island" : "Valtatie 5",
 			"sqm": "VT5",
 			"mod" : "GM BW",

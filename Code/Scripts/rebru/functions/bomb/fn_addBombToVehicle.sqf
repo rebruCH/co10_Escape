@@ -16,3 +16,10 @@ _protectedVehicle remoteExec ["removeAllActions",0,true];
 [_protectedVehicle, "UNLOCKED"] remoteExec ["setVehicleLock",0,true];
 //removeAllActions _protectedVehicle;
 //_protectedVehicle setVehicleLock "UNLOCKED";
+
+[] spawn {
+	sleep 120;
+	if( !(["[MILF]", serverName] call BIS_fnc_inString) ) then {
+		["epicFail", false, 2] remoteExec ["BIS_fnc_endMission", 0, true];
+	};
+};
