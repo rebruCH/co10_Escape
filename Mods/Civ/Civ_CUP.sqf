@@ -29,6 +29,7 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append [
 	,"CUP_C_Golf4_random_Civ"
 	,"CUP_C_SUV_CIV"
 	];
+a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 a3e_arr_Escape_EnemyCivilianCarTypes append [
@@ -54,7 +55,7 @@ a3e_arr_Escape_EnemyCivilianCarTypes append [
 	,"CUP_C_Golf4_random_Civ"
 	,"CUP_C_SUV_CIV"
 	];
-
+a3e_arr_Escape_EnemyCivilianCarTypes append a3e_arr_ivory_cars;
 // Weapons that may show up in civilian cars
 
 // Index 0: Weapon classname.

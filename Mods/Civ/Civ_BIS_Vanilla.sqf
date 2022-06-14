@@ -21,6 +21,7 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append [
 	,"C_Van_01_transport_F"
 	,"C_Van_01_fuel_F"
 	];
+a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;	
 
 // Random array. Enemies sometimes use civilian vehicles in their unconventional search for players. The following car types may be used.
 a3e_arr_Escape_EnemyCivilianCarTypes append [
@@ -33,6 +34,7 @@ a3e_arr_Escape_EnemyCivilianCarTypes append [
 	,"C_Van_01_transport_F"
 	,"C_Van_01_fuel_F"
 	];
+a3e_arr_Escape_EnemyCivilianCarTypes append a3e_arr_ivory_cars;
 
 // Weapons that may show up in civilian cars
 
