@@ -1,7 +1,7 @@
-
 // Defines
 _airVehicles = a3e_arr_O_transport_heli + a3e_arr_I_transport_heli + a3e_arr_searchChopperEasy + a3e_arr_searchChopperHard + a3e_arr_extraction_chopper + a3e_arr_extraction_chopper_escort ;
-_groundVehicles = a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses + a3e_arr_extraction_car + a3e_arr_extraction_car_escort + a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses + a3e_arr_ComCenDefence_lightArmorClasses + a3e_arr_ComCenDefence_heavyArmorClasses ;
+//_groundVehicles = a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses + a3e_arr_extraction_car + a3e_arr_extraction_car_escort + a3e_arr_Escape_MotorizedSearchGroup_vehicleClasses + a3e_arr_ComCenDefence_lightArmorClasses + a3e_arr_ComCenDefence_heavyArmorClasses ;
+_groundVehicles = a3e_arr_ivory_cars;
 _waterVehicles = a3e_arr_extraction_boat + a3e_arr_extraction_boat_escort + a3e_arr_AquaticPatrols;
 
 [] spawn {
