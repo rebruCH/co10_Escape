@@ -42,7 +42,7 @@ _player addEventHandler ["GetInMan", {
 			params ["_unit"];
 			private _enemySide = "";
 			if( (side group _unit) isEqualTo west ) then { _enemySide = east } else { _enemySide = west };
-			systemChat format["EnemySide %1", _enemySide];
+			diag_log format["EnemySide %1", _enemySide];
 			while {true} do {
 				scopeName "incognito";
 				if(allplayers findIf {count (_x nearentities 50 select {side _x isEqualTo _enemySide}) > 0} >= 0) then {
@@ -54,7 +54,6 @@ _player addEventHandler ["GetInMan", {
 						breakOut "incognito";
 					};
 				};
-				systemChat "loop";
 				sleep 1;
 			};
 		};
