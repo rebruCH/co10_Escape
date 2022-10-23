@@ -350,6 +350,13 @@
 			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		},
 		{
+			"island" : "Mutambara",
+			"sqm": "Mutambara",
+			"mod" : "OPTRE Desert",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
 			"island" : "Napf Island",
 			"sqm": "napf",
 			"mod" : "OPTRE Woodland",
@@ -362,6 +369,13 @@
 			"mod" :  "OPTRE Winter",
 			"replace" : {},
 			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+        {
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
 		},
 		{
 			"island" : "Nogova",
@@ -525,6 +539,13 @@
 			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Tropical"
 		},
 		{
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+		},
+		{
 			"island" : "Anizay",
 			"sqm": "tem_anizay",
 			"mod" : "OPTRE Desert",
@@ -579,6 +600,13 @@
 			"mod" : "OPTRE Woodland",
 			"replace" : {},
 			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		},
         {
 			"island" : "Fapovo",

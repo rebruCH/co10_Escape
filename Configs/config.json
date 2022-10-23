@@ -944,7 +944,38 @@
 				"ISLAND" : "Sefrou-Ramal",
 				"ISLANDNAME" : "Sefrou-Ramal"
 				}
+		},
+		{	
+			"name" : "Colombia",
+			"class" : "UMB_Colombia",
+			"path" : "./Islands/UMB_Colombia/",
+			"replace" :
+				{
+				"ISLAND" : "Colombia",
+				"ISLANDNAME" : "Colombia"
+				}
+		},
+        {
+			"name" : "Mutambara",
+			"class" : "swu_public_rhode_map",
+			"path" : "./Islands/Mutambara/",
+			"replace" :
+				{
+				"ISLAND" : "Mutambara",
+				"ISLANDNAME" : "Mutambara"
+				}
+		},
+        {
+			"name" : "Niakala",
+			"class" : "juju_kalahari",
+			"path" : "./Islands/Niakala/",
+			"replace" :
+				{
+				"ISLAND" : "Niakala",
+				"ISLANDNAME" : "Niakala"
+				}
 		}
+
 	],
 	"Missions" : [
 		{
@@ -1508,6 +1539,13 @@
 			"name" : "co15_Escape_BIS_NATO_vs_CSAT"
 		},
         {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
 			"island" : "Fapovo",
 			"sqm": "Fapovo",
 			"mod" : "Vanilla",
@@ -1520,6 +1558,41 @@
 			"mod" : "Vanilla",
 			"replace" : {},
 			"name" : "co15_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+		{
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "Vanilla Apex",
+			"replace" : {},
+			"name" : "co10_Escape_APEX_NATO_vs_CSAT"
+		},
+        {
+			"island" : "Mutambara",
+			"sqm": "Mutambara",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+        {
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "Vanilla",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_NATO_vs_CSAT"
+		},
+		{
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "Vanilla Apex",
+			"replace" : {},
+			"name" : "co10_Escape_APEX_NATO_vs_CSAT"
 		},
 		{
 			"island" : "Altis",
@@ -2278,6 +2351,20 @@
 			"name" : "co15_Escape_Contact_CSAT_vs_NATO"
 		},
         {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "Vanilla Contact US",
+			"replace" : {},
+			"name" : "co10_Escape_Contact_CSAT_vs_NATO"
+		},
+        {
 			"island" : "Fapovo",
 			"sqm": "Fapovo",
 			"mod" : "Vanilla US",
@@ -2299,11 +2386,39 @@
 			"name" : "co15_Escape_Contact_CSAT_vs_NATO"
 		},
         {
-			"island" : "xcam_taunus",
-			"sqm": "xcam_taunus",
-			"mod" : "Vanilla Contact US",
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "Vanilla US",
 			"replace" : {},
-			"name" : "co15_Escape_Contact_CSAT_vs_NATO"
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+		{
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "Vanilla Apex US",
+			"replace" : {},
+			"name" : "co10_Escape_APEX_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Mutambara",
+			"sqm": "Mutambara",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "Vanilla US",
+			"replace" : {},
+			"name" : "co10_Escape_BIS_CSAT_vs_NATO"
+		},
+        {
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "Vanilla Apex US",
+			"replace" : {},
+			"name" : "co10_Escape_APEX_CSAT_vs_NATO"
 		}
 	],
 	"Addons" : [

@@ -456,6 +456,13 @@
 			"name" : "co15_Escape_GM_NVA_vs_BW"
 		},
         {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "GM BW",
+			"replace" : {},
+			"name" : "co10_Escape_GM_NVA_vs_BW"
+		},
+        {
 			"island" : "Fapovo",
 			"sqm": "Fapovo",
 			"mod" : "GM BW",
@@ -552,6 +559,27 @@
 			"mod" : "GM BW",
 			"replace" : {},
 			"name" : "co15_Escape_GM_NVA_vs_BW"
+		},
+		{
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "GM BW",
+			"replace" : {},
+			"name" : "co10_Escape_GM_NVA_vs_BW"
+		},
+		{
+			"island" : "Mutambara",
+			"sqm": "Mutambara",
+			"mod" : "GM BW",
+			"replace" : {},
+			"name" : "co10_Escape_GM_NVA_vs_BW"
+		},
+		{
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "GM BW",
+			"replace" : {},
+			"name" : "co10_Escape_GM_NVA_vs_BW"
 		},
 		{
 			"island" : "Altis",
@@ -911,6 +939,13 @@
 			"name" : "co15_Escape_GM_BW_vs_NVA"
 		},
         {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "GM NVA",
+			"replace" : {},
+			"name" : "co10_Escape_GM_BW_vs_NVA"
+		},
+        {
 			"island" : "Fapovo",
 			"sqm": "Fapovo",
 			"mod" : "GM NVA",
@@ -965,6 +1000,27 @@
 			"mod" : "GM NVA",
 			"replace" : {},
 			"name" : "co15_Escape_GM_BW_vs_NVA"
+		},
+		{
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "GM NVA",
+			"replace" : {},
+			"name" : "co10_Escape_GM_BW_vs_NVA"
+		},
+		{
+			"island" : "Mutambara",
+			"sqm": "Mutambara",
+			"mod" : "GM NVA",
+			"replace" : {},
+			"name" : "co10_Escape_GM_BW_vs_NVA"
+		},
+		{
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "GM NVA",
+			"replace" : {},
+			"name" : "co10_Escape_GM_BW_vs_NVA"
 		}
 	],
 	"Addons" : [
