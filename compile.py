@@ -21,7 +21,8 @@ for scfg in data['Subconfigs']:
         addons = addons + adata['Addons']
 #Add devbuild number to version
 #if os.environ['GIT_BRANCH'] == "develop":
-data['replace']['VERSION'] += ' dev ' + datetime.today().strftime("%y%m%d %H%M")
+#data['replace']['VERSION'] += ' dev ' + datetime.today().strftime("%y%m%d %H%M")
+data['replace']['VERSION'] += ''
 data['replace']['RELEASE'] = 'Mission'
 cpbo = data['cpbo'];
 
