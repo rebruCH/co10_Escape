@@ -1,5 +1,3 @@
-if(!isserver) exitwith {};
-
 private ["_mpPosition", "_createMPcount", "_mapsize", "_mpc"];
 
 _mpPosition = [];
@@ -82,7 +80,6 @@ private _playergroup = [] call A3E_fnc_getPlayerGroup;
      a3e_arr_ComCenDefence_lightArmorClasses + a3e_arr_ComCenDefence_heavyArmorClasses]
      call A3E_fnc_BuildMotorPool;
 
-    [_playergroup, "A3E_MotorPoolPatrolMarker", A3E_VAR_Side_Opfor, "INS", 5, 5, 8, A3E_Param_EnemySkill, A3E_Param_EnemySkill, A3E_Param_EnemySpawnDistance, false] spawn drn_fnc_InitGuardedLocations;
 	 a3e_var_Escape_MotorPoolPositions pushBack (_x select 0);
 } foreach _mpPosition;
 

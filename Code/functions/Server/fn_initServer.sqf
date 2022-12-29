@@ -1,29 +1,5 @@
 //waituntil{!isNil("BIS_fnc_init")};
-if(!isServer) exitwith {};
 ["Server started."] spawn a3e_fnc_debugmsg;
-if(isNil("a3e_var_commonLibInitialized")) then {
-	call compile preprocessFileLineNumbers "Scripts\DRN\CommonLib\CommonLib.sqf";
-};
-
-
-//Parse the parameters
-call a3e_fnc_parameterInit;
-
-call compile preprocessFileLineNumbers "Scripts\Escape\Functions.sqf";
-call compile preprocessFileLineNumbers "Scripts\Escape\AIskills.sqf";
-
-if(!isNil("A3E_Param_Debug")) then {
-	if((A3E_Param_Debug)==0 && !(missionNamespace getVariable ["a3e_debug_overwrite",false])) then {
-		A3E_Debug = false;
-	} else {
-		A3E_Debug = true;
-		["Debug mode active!."] spawn a3e_fnc_debugmsg;
-	};
-} else {
-	A3E_Debug = true;
-	["Warning! Debug was set to true because of missing param!."] spawn a3e_fnc_debugmsg;
-};
-publicVariable "A3E_Debug";
 
 //ACE Revive
 AT_Revive_Camera = A3E_Param_ReviveView; //Needs to be stored on server now
@@ -43,12 +19,10 @@ publicVariable "ACE_MedicalServer";
 //##############
 
 
-private ["_villagePatrolSpawnArea","_EnemyCount","_enemyMinSkill", "_enemyMaxSkill", "_searchChopperSearchTimeMin", "_searchChopperRefuelTimeMin", "_enemySpawnDistance", "_playerGroup", "_enemyFrequency", "_scriptHandle"];
+private ["_EnemyCount","_enemyMinSkill", "_enemyMaxSkill", "_searchChopperSearchTimeMin", "_searchChopperRefuelTimeMin", "_enemySpawnDistance", "_playerGroup", "_enemyFrequency"];
 
 _enemyFrequency = (A3E_Param_EnemyFrequency);
 _enemySpawnDistance = (A3E_Param_EnemySpawnDistance);
-
-[_enemyFrequency] call compile preprocessFileLineNumbers "Units\UnitClasses.sqf";
 
 // prison is created locally, clients need flag texture path
 publicVariable "A3E_VAR_Flag_Ind";
@@ -110,7 +84,6 @@ publicVariable "a3e_var_Escape_hoursSkipped";
 
 
 setTimeMultiplier A3E_Param_TimeMultiplier;
-call compile preprocessFileLineNumbers ("Island\CommunicationCenterMarkers.sqf");
 
 
 // Game Control Variables, do not edit!
@@ -149,11 +122,6 @@ a3e_var_Escape_enemyMaxSkill = _enemyMaxSkill;
 _searchChopperSearchTimeMin = (5 + random 10);
 _searchChopperRefuelTimeMin = (5 + random 10);
 
-
-_villagePatrolSpawnArea = (A3E_Param_VillageSpawnCount);
-
-drn_searchAreaMarkerName = "drn_searchAreaMarker";
-
 //Getting exclusion zones
 if(isNil("A3E_ExclusionZones")) then {
   A3E_ExclusionZones = [];
@@ -185,17 +153,36 @@ private _backpack = [] call A3E_fnc_createStartpos;
 
 //### The following is a mission function now
 
-[true] call drn_fnc_InitVillageMarkers;
-[true] call drn_fnc_InitAquaticPatrolMarkers;
-
 //Wait for players to actually arrive ingame. This may be a long time if server is set to persistent
 waituntil{uisleep 1; count([] call A3E_FNC_GetPlayers)>0};
 
 _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
+a3e_searchTargets = [2];
 
-[_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug] execVM "Scripts\Escape\EscapeSurprises.sqf";
 
+private _hasHC = !(a3e_hcArray isEqualTo []);
+if (_hasHC) then {
+	"waiting for HC ready" call a3e_fnc_rptLog;
+	waitUntil {a3e_hcReady isEqualTo []};
+	"all HC ready" call a3e_fnc_rptLog;
+	a3e_nextHC = 0;
+	a3e_searchTargets append a3e_hcArray;
+};
+private _getExecTarget = if (!_hasHC) then {
+	{2} // server
+} else {
+	{
+		private _next = a3e_nextHC;
+		a3e_nextHC = a3e_nextHC + 1;
+		if (a3e_nextHC >= count a3e_hcArray) then {
+			a3e_nextHC = 0;
+		};
+		a3e_hcArray select _next
+	}
+};
+
+[[_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug], "Scripts\Escape\EscapeSurprises.sqf"] remoteExec ["execVM", call _getExecTarget];
 
 // Initialize communication centers
 
@@ -203,7 +190,7 @@ _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
 _EnemyCount = [3] call A3E_fnc_GetEnemyCount;
 
-[_playerGroup, "drn_CommunicationCenterPatrolMarker", A3E_VAR_Side_Opfor, "INS", 4, _EnemyCount select 0, _EnemyCount select 1, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance] call drn_fnc_InitGuardedLocations;
+[_playerGroup, "drn_CommunicationCenterPatrolMarker", A3E_VAR_Side_Opfor, "INS", 4, _EnemyCount select 0, _EnemyCount select 1, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, A3E_Debug] call drn_fnc_InitGuardedLocations;
 [_playerGroup, a3e_var_Escape_communicationCenterPositions, _enemySpawnDistance, _enemyFrequency] call drn_fnc_Escape_InitializeComCenArmor;
 
 
@@ -215,7 +202,7 @@ _EnemyCount = [3] call A3E_fnc_GetEnemyCount;
 
 [_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _playerGroup, _enemyFrequency] spawn {
 	params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_playerGroup", "_enemyFrequency"];
-	private ["_playerGroup", "_minEnemies", "_maxEnemies", "_bannedPositions", "_scriptHandle"];
+	private ["_playerGroup", "_minEnemies", "_maxEnemies", "_bannedPositions"];
 
 	private _EnemyCount = [2] call A3E_fnc_GetEnemyCount;
 	_EnemyCount params ["_minEnemies", "_maxEnemies"];
@@ -225,7 +212,7 @@ _EnemyCount = [3] call A3E_fnc_GetEnemyCount;
 
 	[] call A3E_fnc_createAmmoDepots;
 
-	[_playerGroup, "drn_AmmoDepotPatrolMarker", A3E_VAR_Side_Opfor , "INS", 3, _minEnemies, _maxEnemies, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, A3E_Debug] spawn drn_fnc_InitGuardedLocations;
+	[_playerGroup, "drn_AmmoDepotPatrolMarker", A3E_VAR_Side_Opfor , "INS", 3, _minEnemies, _maxEnemies, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, A3E_Debug] call drn_fnc_InitGuardedLocations;
 };
 
 
@@ -241,7 +228,7 @@ _EnemyCount = [3] call A3E_fnc_GetEnemyCount;
 
 
 // Run initialization for scripts that need the players to be gathered at the start position
-[] spawn A3E_fnc_initVillages;
+remoteExec ["A3E_fnc_initVillages", call _getExecTarget];
 
 // Ivory Cars
 // Cars Array erweitern
@@ -438,69 +425,28 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;
 
 	// Enemy military traffic
 
-	switch (_enemyFrequency) do
-	{
-		case 1: // 1-3 players
-		{
-			_vehiclesPerSqkm = 0.6;
+	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_prepareAquaticPatrols", call _getExecTarget];
+	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initAmbientInfantry", call _getExecTarget];
+	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initMilitaryTraffic", call _getExecTarget];
+
+	[_enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initCivilianTraffic", call _getExecTarget];
+	[_enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initRoadBlocks", call _getExecTarget];
+
+	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _playerGroup] spawn {
+		params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_playerGroup"];
+		//Spawn crashsites
+
+		private _crashSiteCount = ceil(random(missionNamespace getvariable["CrashSiteCountMax",3]));
+		for "_i" from 1 to _crashSiteCount step 1 do {
+			private _pos = [] call A3E_fnc_findFlatArea;
+			[_pos] call A3E_fnc_crashSite;
 		};
-		case 2: // 4-6 players
-		{
-			_vehiclesPerSqkm = 0.8;
-		};
-		default // 7-8 players
-		{
-			_vehiclesPerSqkm = 1;
-		};
-	};
 
-	_radius = _enemySpawnDistance + 500;
-	_vehiclesCount = round (_vehiclesPerSqkm * (_radius / 1000) * (_radius / 1000) * 3.141592);
-	[_vehiclesCount,_enemySpawnDistance,_radius,_enemyMinSkill, _enemyMaxSkill] spawn {
-		params["_vehiclesCount","_enemySpawnDistance","_radius","_enemyMinSkill", "_enemyMaxSkill"];
-		sleep 60*15; //Wait 15 Minutes before heavy vehicles may arrive
-		[A3E_VAR_Side_Opfor, [], _vehiclesCount/2, _enemySpawnDistance, _radius, _enemyMinSkill, _enemyMaxSkill, drn_fnc_Escape_TrafficSearch, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
-		[A3E_VAR_Side_Ind, [], _vehiclesCount/2, _enemySpawnDistance, _radius, _enemyMinSkill, _enemyMaxSkill, drn_fnc_Escape_TrafficSearch, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
-    };
-
-	private ["_areaPerRoadBlock", "_maxEnemySpawnDistanceKm", "_roadBlockCount"];
-	private ["_fnc_OnSpawnInfantryGroup", "_fnc_OnSpawnMannedVehicle"];
-
-	_fnc_OnSpawnInfantryGroup = {{_x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;} foreach units _this;};
-	_fnc_OnSpawnMannedVehicle = {{_x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;} foreach (_this select 1);};
-
-	switch (_enemyFrequency) do {
-		case 1: {
-			_areaPerRoadBlock = 4.19;
-		};
-		case 2: {
-			_areaPerRoadBlock = 3.14;
-		};
-		default {
-			_areaPerRoadBlock = 2.5;
-		};
-	};
-
-	_maxEnemySpawnDistanceKm = (_enemySpawnDistance + 500) / 1000;
-	_roadBlockCount = round ((_maxEnemySpawnDistanceKm * _maxEnemySpawnDistanceKm * 3.141592) / _areaPerRoadBlock);
-
-	if (_roadBlockCount < 1) then {
-		_roadBlockCount = 1;
-	};
-	//A3E_VAR_Side_Ind
-	[a3e_arr_Escape_InfantryTypes, a3e_arr_Escape_RoadBlock_MannedVehicleTypes, _fnc_OnSpawnInfantryGroup, _fnc_OnSpawnMannedVehicle, A3E_Debug] spawn A3E_fnc_RoadBlocks;
-
-	//Spawn crashsites
-
-	private _crashSiteCount = ceil(random(missionNamespace getvariable["CrashSiteCountMax",3]));
-	for "_i" from 1 to _crashSiteCount step 1 do {
-		private _pos = [] call A3E_fnc_findFlatArea;
-		[_pos] call A3E_fnc_crashSite;
-	};
-
+		private _EnemyCount = [2] call A3E_fnc_GetEnemyCount;
 
 	//Spawn mortar sites
 	[] call A3E_fnc_createMortarSites;
+	[_playergroup, "A3E_MortarSitePatrolMarker", A3E_VAR_Side_Opfor, "INS", 2, _EnemyCount select 0, _EnemyCount select 1, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, A3E_Debug] call drn_fnc_InitGuardedLocations;
 };
 
 //Start local and remote statistic tracking
@@ -510,10 +456,21 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;
 };
 
 // Create search chopper
+[
+	[
+		getMarkerPos "drn_searchChopperStartPosMarker",
+		A3E_VAR_Side_Opfor,
+		drn_searchAreaMarkerName,
+		_searchChopperSearchTimeMin,
+		_searchChopperRefuelTimeMin,
+		_enemyMinSkill,
+		_enemyMaxSkill,
+		[],
+		A3E_Debug
+	],
+	"Scripts\Escape\CreateSearchChopper.sqf"
+] remoteExec ["execVM", call _getExecTarget];
 
-private ["_scriptHandle"];
-_scriptHandle = [getMarkerPos "drn_searchChopperStartPosMarker", A3E_VAR_Side_Opfor, drn_searchAreaMarkerName, _searchChopperSearchTimeMin, _searchChopperRefuelTimeMin, _enemyMinSkill, _enemyMaxSkill, [], A3E_Debug] execVM "Scripts\Escape\CreateSearchChopper.sqf";
-waitUntil {scriptDone _scriptHandle};
 
 
 // Spawn creation of start position settings
