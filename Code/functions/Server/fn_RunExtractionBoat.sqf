@@ -1,5 +1,3 @@
-if (!isServer) exitWith {};
-
 //backup for unitclasses without boat classnames
 if ((count a3e_arr_extraction_boat <1) && (A3E_VAR_Side_Blufor == west)) then {
 a3e_arr_extraction_boat = ["B_Boat_Armed_01_minigun_F"];
