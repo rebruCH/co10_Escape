@@ -354,7 +354,7 @@
 			"sqm": "Mutambara",
 			"mod" : "OPTRE Desert",
 			"replace" : {},
-			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Desert"
 		},
 		{
 			"island" : "Napf Island",
@@ -375,7 +375,7 @@
 			"sqm": "Niakala",
 			"mod" : "OPTRE Tropical",
 			"replace" : {},
-			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Tropical"
 		},
 		{
 			"island" : "Nogova",
@@ -543,7 +543,7 @@
 			"sqm": "UMB_Colombia",
 			"mod" : "OPTRE Tropical",
 			"replace" : {},
-			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Tropical"
 		},
 		{
 			"island" : "Anizay",
@@ -606,7 +606,7 @@
 			"sqm": "CountyFermanagh",
 			"mod" : "OPTRE Woodland",
 			"replace" : {},
-			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+			"name" : "co15_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		},
         {
 			"island" : "Fapovo",
