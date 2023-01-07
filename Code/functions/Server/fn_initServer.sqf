@@ -85,7 +85,6 @@ publicVariable "a3e_var_Escape_hoursSkipped";
 
 setTimeMultiplier A3E_Param_TimeMultiplier;
 
-
 // Game Control Variables, do not edit!
 
 a3e_var_Escape_AllPlayersDead = false;
@@ -121,6 +120,7 @@ a3e_var_Escape_enemyMaxSkill = _enemyMaxSkill;
 
 _searchChopperSearchTimeMin = (5 + random 10);
 _searchChopperRefuelTimeMin = (5 + random 10);
+
 
 //Getting exclusion zones
 if(isNil("A3E_ExclusionZones")) then {
@@ -160,7 +160,6 @@ _playerGroup = [] call A3E_fnc_GetPlayerGroup;
 
 a3e_searchTargets = [2];
 
-
 private _hasHC = !(a3e_hcArray isEqualTo []);
 if (_hasHC) then {
 	"waiting for HC ready" call a3e_fnc_rptLog;
@@ -184,15 +183,16 @@ private _getExecTarget = if (!_hasHC) then {
 
 [[_enemyMinSkill, _enemyMaxSkill, _enemyFrequency, A3E_Debug], "Scripts\Escape\EscapeSurprises.sqf"] remoteExec ["execVM", call _getExecTarget];
 
+
 // Initialize communication centers
 
+call compile preprocessFileLineNumbers ("Island\CommunicationCenterMarkers.sqf");
 [] call A3E_fnc_createComCenters;
 
 _EnemyCount = [3] call A3E_fnc_GetEnemyCount;
 
 [_playerGroup, "drn_CommunicationCenterPatrolMarker", A3E_VAR_Side_Opfor, "INS", 4, _EnemyCount select 0, _EnemyCount select 1, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, A3E_Debug] call drn_fnc_InitGuardedLocations;
 [_playerGroup, a3e_var_Escape_communicationCenterPositions, _enemySpawnDistance, _enemyFrequency] call drn_fnc_Escape_InitializeComCenArmor;
-
 
 // Initialize Motor Pools
 [] call A3E_fnc_createMotorPools;
@@ -226,223 +226,31 @@ _EnemyCount = [3] call A3E_fnc_GetEnemyCount;
 // Start garbage collector
 [_playerGroup, 750, A3E_Debug] spawn drn_fnc_CL_RunGarbageCollector;
 
-
-// Run initialization for scripts that need the players to be gathered at the start position
-remoteExec ["A3E_fnc_initVillages", call _getExecTarget];
-
 // Ivory Cars
 // Cars Array erweitern
 a3e_arr_ivory_cars = ["ivory_190e", "ivory_190e", "ivory_190e_taxi", "ivory_911", "ivory_911", "ivory_c", "ivory_c", "ivory_c_president", "ivory_ccx", "ivory_ccx", "ivory_challenger", "ivory_challenger", "ivory_challenger_marked", "ivory_challenger_marked", "ivory_challenger_marked_classic", "ivory_challenger_unmarked", "ivory_challenger_unmarked", "ivory_challenger_slicktop", "ivory_challenger_slicktop", "ivory_challenger_slicktop_classic", "ivory_charger", "ivory_charger", "ivory_charger_marked", "ivory_charger_marked", "ivory_charger_marked_classic", "ivory_charger_unmarked", "ivory_charger_unmarked", "ivory_charger_slicktop", "ivory_charger_slicktop", "ivory_charger_slicktop_classic", "ivory_cv", "ivory_cv", "ivory_cv_marked", "ivory_cv_marked", "ivory_cv_marked_classic", "ivory_cv_unmarked", "ivory_cv_unmarked", "ivory_cv_slicktop", "ivory_cv_slicktop", "ivory_cv_slicktop_classic", "ivory_cv_taxi", "ivory_cv_unmarked_taxi", "ivory_e36", "ivory_e36", "ivory_elise", "ivory_elise", "ivory_evox", "ivory_evox", "ivory_evox_marked", "ivory_evox_marked", "ivory_evox_marked_classic", "ivory_evox_unmarked", "ivory_evox_unmarked", "ivory_evox_slicktop", "ivory_evox_slicktop", "ivory_evox_slicktop_classic", "ivory_f1", "ivory_f1", "ivory_gt500", "ivory_gt500", "ivory_gti", "ivory_gti", "ivory_isf", "ivory_isf", "ivory_isf_marked", "ivory_isf_marked", "ivory_isf_marked_classic", "ivory_isf_unmarked", "ivory_isf_unmarked", "ivory_isf_slicktop", "ivory_isf_slicktop", "ivory_isf_slicktop_classic", "ivory_lfa", "ivory_lfa", "ivory_lp560", "ivory_lp560", "ivory_m3", "ivory_m3", "ivory_m3_marked", "ivory_m3_marked", "ivory_m3_marked_classic", "ivory_m3_unmarked", "ivory_m3_unmarked", "ivory_m3_slicktop", "ivory_m3_slicktop", "ivory_m3_slicktop_classic", "ivory_mp4", "ivory_mp4", "ivory_prius", "ivory_prius", "ivory_prius_marked", "ivory_prius_marked", "ivory_prius_marked_classic", "ivory_prius_unmarked", "ivory_prius_unmarked", "ivory_prius_slicktop", "ivory_prius_slicktop", "ivory_prius_slicktop_classic", "ivory_prius_taxi", "ivory_r34", "ivory_r34", "ivory_r8", "ivory_r8", "ivory_r8_spyder", "ivory_rev", "ivory_rev", "ivory_rev_marked", "ivory_rev_marked", "ivory_rev_marked_classic", "ivory_rev_unmarked", "ivory_rev_unmarked", "ivory_rev_slicktop", "ivory_rev_slicktop", "ivory_rev_slicktop_classic", "ivory_rs4", "ivory_rs4", "ivory_rs4_taxi", "ivory_rs4_marked", "ivory_rs4_marked", "ivory_rs4_marked_classic", "ivory_rs4_unmarked", "ivory_rs4_unmarked", "ivory_rs4_slicktop", "ivory_rs4_slicktop", "ivory_rs4_slicktop_classic", "ivory_suburban", "ivory_suburban", "ivory_suburban_marked", "ivory_suburban_marked", "ivory_suburban_marked_classic", "ivory_suburban_unmarked", "ivory_suburban_unmarked", "ivory_suburban_slicktop", "ivory_suburban_slicktop", "ivory_suburban_slicktop_classic", "ivory_suburban_ems", "ivory_suburban_ems_slicktop", "ivory_supra", "ivory_supra", "ivory_supra_topsecret", "ivory_taurus", "ivory_taurus", "ivory_taurus_marked", "ivory_taurus_marked", "ivory_taurus_marked_classic", "ivory_taurus_unmarked", "ivory_taurus_unmarked", "ivory_taurus_slicktop", "ivory_taurus_slicktop", "ivory_taurus_slicktop_classic", "ivory_veyron", "ivory_veyron", "ivory_wrx", "ivory_wrx", "ivory_wrx_marked", "ivory_wrx_marked", "ivory_wrx_marked_classic", "ivory_wrx_unmarked", "ivory_wrx_unmarked", "ivory_wrx_slicktop", "ivory_wrx_slicktop", "ivory_wrx_slicktop_classic"];
 a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;
 
-[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] spawn {
-	params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_enemyFrequency"];
 
-    private ["_fnc_OnSpawnAmbientInfantryGroup", "_fnc_OnSpawnAmbientInfantryUnit", "_scriptHandle"];
-    private ["_playerGroup", "_minEnemiesPerGroup", "_maxEnemiesPerGroup", "_fnc_OnSpawnGroup"];
+remoteExec ["A3E_fnc_initVillages", call _getExecTarget];
+[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_prepareAquaticPatrols", call _getExecTarget];
+[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initAmbientInfantry", call _getExecTarget];
+[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initMilitaryTraffic", call _getExecTarget];
+[_enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initCivilianTraffic", call _getExecTarget];
+[_enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initRoadBlocks", call _getExecTarget];
 
-    _playerGroup = [] call A3E_fnc_GetPlayerGroup;
+[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _playerGroup] spawn {
+	params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_playerGroup"];
 
-        switch (_enemyFrequency) do
-        {
-            case 1: // 1-2 players
-            {
-                _minEnemiesPerGroup = 2;
-                _maxEnemiesPerGroup = 4;
-            };
-            case 2: // 3-5 players
-            {
-                _minEnemiesPerGroup = 3;
-                _maxEnemiesPerGroup = 6;
-            };
-            default // 6-8 players
-            {
-                _minEnemiesPerGroup = 4;
-                _maxEnemiesPerGroup = 8;
-            };
-        };
+	//Spawn crashsites
 
-        _fnc_OnSpawnGroup = {
-            {
-                _x call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;
-            } foreach units _this;
-        };
-
-        [(units _playerGroup) select 0, A3E_VAR_Side_Opfor, a3e_arr_Escape_InfantryTypes, _minEnemiesPerGroup, _maxEnemiesPerGroup, 500000, _enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance + 250, _fnc_OnSpawnGroup, A3E_Debug] call drn_fnc_InitAquaticPatrols;
-
-
-
-
-
-    // Initialize ambient infantry groups
-
-	_fnc_OnSpawnAmbientInfantryUnit = {
-		_this call drn_fnc_Escape_OnSpawnGeneralSoldierUnit;
+	private _crashSiteCount = ceil(random(missionNamespace getvariable["CrashSiteCountMax",3]));
+	for "_i" from 1 to _crashSiteCount step 1 do {
+		private _pos = [] call A3E_fnc_findFlatArea;
+		[_pos] call A3E_fnc_crashSite;
 	};
 
-	_fnc_OnSpawnAmbientInfantryGroup = {
-		private ["_unit", "_enemyUnit"];
-		private ["_scriptHandle"];
-
-		_unit = units _this select 0;
-
-		while {!(isNull _unit)} do {
-			_enemyUnit = _unit findNearestEnemy (getPos _unit);
-			if (!(isNull _enemyUnit)) exitWith {
-
-				private _i = 0;
-				for [{_i = (count waypoints _this) - 1}, {_i >= 0}, {_i = _i - 1}] do {
-					deleteWaypoint [_this, _i];
-				};
-
-				_scriptHandle = [_this, drn_searchAreaMarkerName, (getPos _enemyUnit), A3E_Debug] spawn drn_fnc_searchGroup;
-				_this setVariable ["drn_scriptHandle", _scriptHandle];
-			};
-
-			sleep 5;
-		};
-	};
-
-	private ["_infantryGroupsCount", "_radius", "_groupsPerSqkm"];
-
-	switch (_enemyFrequency) do
-	{
-		case 1: // 1-2 players
-		{
-			_minEnemiesPerGroup = 2;
-			_maxEnemiesPerGroup = 4;
-			_groupsPerSqkm = 1;
-		};
-		case 2: // 3-5 players
-		{
-			_minEnemiesPerGroup = 2;
-			_maxEnemiesPerGroup = 8;
-			_groupsPerSqkm = 1.2;
-		};
-		default // 6-8 players
-		{
-			_minEnemiesPerGroup = 2;
-			_maxEnemiesPerGroup = 12;
-			_groupsPerSqkm = 1.4;
-		};
-	};
-
-	_radius = (_enemySpawnDistance + 500) / 1000;
-	_infantryGroupsCount = round (_groupsPerSqkm * _radius * _radius * 3.141592);
-
-	[_playerGroup, A3E_VAR_Side_Opfor, a3e_arr_Escape_InfantryTypes, _infantryGroupsCount, _enemySpawnDistance + 200, _enemySpawnDistance + 500, _minEnemiesPerGroup, _maxEnemiesPerGroup, _enemyMinSkill, _enemyMaxSkill, 750, _fnc_OnSpawnAmbientInfantryUnit, _fnc_OnSpawnAmbientInfantryGroup, A3E_Debug] spawn drn_fnc_AmbientInfantry;
-
-
-    // Initialize the Escape military and civilian traffic
-	private ["_vehiclesPerSqkm", "_radius", "_vehiclesCount", "_fnc_onSpawnCivilian"];
-
-	// Civilian traffic
-
-	switch (_enemyFrequency) do
-	{
-		case 1: // 1-3 players
-		{
-			_vehiclesPerSqkm = 1.6;
-		};
-		case 2: // 4-6 players
-		{
-			_vehiclesPerSqkm = 1.4;
-		};
-		default // 7-8 players
-		{
-			_vehiclesPerSqkm = 1.2;
-		};
-	};
-
-	_radius = _enemySpawnDistance + 500;
-	_vehiclesCount = round (_vehiclesPerSqkm * (_radius / 1000) * (_radius / 1000) * 3.141592);
-
-	_fnc_onSpawnCivilian = {
-		private ["_vehicle", "_crew"];
-		_vehicle = _this select 0;
-		_crew = _this select 1;
-		//_vehiclesGroup = _result select 2;
-
-		{
-			{
-				_x removeWeapon "ItemMap";
-			} foreach _crew; // foreach crew
-
-			_x addeventhandler ["killed",{
-				if ((_this select 1) in (call A3E_fnc_GetPlayers)) then {
-					if((isNil("a3e_var_Escape_SearchLeader_civilianReporting"))||!a3e_var_Escape_SearchLeader_civilianReporting) then {
-						a3e_var_Escape_SearchLeader_civilianReporting = true;
-						publicVariable "a3e_var_Escape_SearchLeader_civilianReporting";
-						(_this select 1) addScore -5;
-					} else {
-						(_this select 1) addScore -1;
-					};
-					(_this select 1) addRating 1000; //Even out the minus score by killing civilians
-					[name (_this select 1) + " has killed a civilian."] call drn_fnc_CL_ShowCommandTextAllClients;
-				};
-				if (isClass(configFile >> "CfgPatches" >> "ACE_Medical")) then {
-					_killer = (_this select 0) getVariable ["ace_medical_lastDamageSource", objNull];
-					if (_killer in (call A3E_fnc_GetPlayers)) then {
-						if((isNil("a3e_var_Escape_SearchLeader_civilianReporting"))||!a3e_var_Escape_SearchLeader_civilianReporting) then {
-								a3e_var_Escape_SearchLeader_civilianReporting = true;
-								publicVariable "a3e_var_Escape_SearchLeader_civilianReporting";
-								(_killer) addScore -5;
-							} else {
-								(_killer) addScore -1;
-							};
-							(_killer) addRating 1000; //Even out the minus score by killing civilians
-							[name (_killer) + " has killed a civilian."] call drn_fnc_CL_ShowCommandTextAllClients;
-					};
-				};
-			}];
-		} foreach _crew;
-
-		clearitemcargoglobal _vehicle;
-        clearWeaponCargoGlobal _vehicle;
-        clearMagazineCargoGlobal _vehicle;
-
-		if (random 100 < 20) then {
-			private ["_weaponItem"];
-
-			_weaponItem = selectRandom a3e_arr_CivilianCarWeapons;
-
-			_vehicle addWeaponCargoGlobal [_weaponItem select 0, 1];
-			_vehicle addMagazineCargoGlobal [_weaponItem select 1, _weaponItem select 2];
-		};
-		if (random 100 < 80) then {
-           _vehicle addItemCargoglobal ["firstaidkit", 3];
-		};
-		if (random 100 < 80) then {
-           _vehicle addMagazineCargoglobal ["smokeshellRed", 2];
-		};
-		if (random 100 < 80) then {
-           _vehicle addMagazineCargoglobal ["Chemlight_green", 5];
-		};
-	};
-
-	[civilian, [], _vehiclesCount, _enemySpawnDistance, _radius, 0.5, 0.5, _fnc_onSpawnCivilian, A3E_Debug] spawn drn_fnc_MilitaryTraffic;
-
-
-	// Enemy military traffic
-
-	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_prepareAquaticPatrols", call _getExecTarget];
-	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initAmbientInfantry", call _getExecTarget];
-	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initMilitaryTraffic", call _getExecTarget];
-
-	[_enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initCivilianTraffic", call _getExecTarget];
-	[_enemySpawnDistance, _enemyFrequency] remoteExec ["A3E_fnc_initRoadBlocks", call _getExecTarget];
-
-	[_enemyMinSkill, _enemyMaxSkill, _enemySpawnDistance, _playerGroup] spawn {
-		params ["_enemyMinSkill", "_enemyMaxSkill", "_enemySpawnDistance", "_playerGroup"];
-		//Spawn crashsites
-
-		private _crashSiteCount = ceil(random(missionNamespace getvariable["CrashSiteCountMax",3]));
-		for "_i" from 1 to _crashSiteCount step 1 do {
-			private _pos = [] call A3E_fnc_findFlatArea;
-			[_pos] call A3E_fnc_crashSite;
-		};
-
-		private _EnemyCount = [2] call A3E_fnc_GetEnemyCount;
+	private _EnemyCount = [2] call A3E_fnc_GetEnemyCount;
 
 	//Spawn mortar sites
 	[] call A3E_fnc_createMortarSites;
@@ -456,6 +264,7 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;
 };
 
 // Create search chopper
+
 [
 	[
 		getMarkerPos "drn_searchChopperStartPosMarker",
@@ -470,8 +279,6 @@ a3e_arr_Escape_MilitaryTraffic_CivilianVehicleClasses append a3e_arr_ivory_cars;
 	],
 	"Scripts\Escape\CreateSearchChopper.sqf"
 ] remoteExec ["execVM", call _getExecTarget];
-
-
 
 // Spawn creation of start position settings
 [A3E_StartPos, _backPack, _enemyFrequency] spawn {
