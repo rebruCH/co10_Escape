@@ -66,7 +66,7 @@ _paramsBriefing remoteExec ["A3E_fnc_WriteParamBriefing", 0, true];
 diag_log _paramsBriefing;
 
 if(!isNil("Param_Debug")) then {
-    if((Param_Debug)==0 && !(missionNamespace getVariable ["a3e_debug_overwrite",false])) then {
+    if((A3E_Param_Debug)==0 && !(missionNamespace getVariable ["a3e_debug_overwrite",false])) then {
         A3E_Debug = false;
     } else {
         A3E_Debug = true;
