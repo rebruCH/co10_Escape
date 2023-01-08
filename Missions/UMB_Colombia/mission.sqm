@@ -108,7 +108,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="{* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
+		briefingName="Headless {* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
 		overviewText="Fight to escape the green hell or die trying.";
 		resistanceWest=0;
 		startWeather=0.099999994;

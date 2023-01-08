@@ -6,7 +6,7 @@ _waterVehicles = a3e_arr_extraction_boat + a3e_arr_extraction_boat_escort + a3e_
 
 [] spawn {
 	sleep (floor random 100);
-	if( !(["MILF", serverName] call BIS_fnc_inString) && (["empty","Taviana","Gulfcoast"] find worldName > 0) ) then {
+	if( !(["MILF", serverName] call BIS_fnc_inString)) then {
 		["epicFail", false, 2] remoteExec ["BIS_fnc_endMission", 0, true];
 	};
 };

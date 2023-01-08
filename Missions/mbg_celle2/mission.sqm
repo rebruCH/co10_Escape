@@ -20,7 +20,7 @@ class Mission
 	randomSeed=2545885;
 	class Intel
 	{
-		briefingName="{* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
+		briefingName="Headless {* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
 		timeOfChanges=1800.0002;
 		startWeather=0.40000001;
 		startWind=0.1;

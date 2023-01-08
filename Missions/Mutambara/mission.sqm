@@ -79,7 +79,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="{* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
+		briefingName="Headless {* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
 		timeOfChanges=1800.0002;
 		startWeather=0.36000001;
 		startWind=0.1;

@@ -67,7 +67,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="{* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
+		briefingName="Headless {* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
 		timeOfChanges=1800.0002;
 		startWeather=0.2;
 		startFog=0.050000001;

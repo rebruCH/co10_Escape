@@ -80,7 +80,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="{* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
+		briefingName="Headless {* MISSION *} {* ISLANDNAME *} {* MOD *} {* VERSION *}";
 		startWeather=0.2;
 		startWind=0.1;
 		startWaves=0.1;
