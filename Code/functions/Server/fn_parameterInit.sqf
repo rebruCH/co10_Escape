@@ -65,7 +65,7 @@ private _paramsBriefing = "Parameters:<br/>"; //An string for the briefing entry
 _paramsBriefing remoteExec ["A3E_fnc_WriteParamBriefing", 0, true];
 diag_log _paramsBriefing;
 
-if(!isNil("Param_Debug")) then {
+if(!isNil("A3E_Param_Debug")) then {
     if((A3E_Param_Debug)==0 && !(missionNamespace getVariable ["a3e_debug_overwrite",false])) then {
         A3E_Debug = false;
     } else {
