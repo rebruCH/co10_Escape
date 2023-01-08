@@ -459,7 +459,7 @@
 			"sqm": "CountyFermanagh",
 			"mod" : "IFA3",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_SOV_vs_GER"
+			"name" : "co15_Escape_IFA3_SOV_vs_GER"
 		},
         {
 			"island" : "Fapovo",
@@ -473,14 +473,14 @@
 			"sqm": "UMB_Colombia",
 			"mod" : "IFA3",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_SOV_vs_GER"
+			"name" : "co15_Escape_IFA3_SOV_vs_GER"
 		},
 		{
 			"island" : "Niakala",
 			"sqm": "Niakala",
 			"mod" : "IFA3",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_SOV_vs_GER"
+			"name" : "co15_Escape_IFA3_SOV_vs_GER"
 		},
 		{
 			"island" : "Altis",
@@ -837,7 +837,7 @@
 			"sqm": "CountyFermanagh",
 			"mod" : "IFA3-GER",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_GER_vs_SOV"
+			"name" : "co15_Escape_IFA3_GER_vs_SOV"
 		},
         {
 			"island" : "Fapovo",
@@ -851,21 +851,21 @@
 			"sqm": "UMB_Colombia",
 			"mod" : "IFA3-GER",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_GER_vs_SOV"
+			"name" : "co15_Escape_IFA3_GER_vs_SOV"
 		},
 		{
 			"island" : "Niakala",
 			"sqm": "Niakala",
 			"mod" : "IFA3-GER",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_GER_vs_SOV"
+			"name" : "co15_Escape_IFA3_GER_vs_SOV"
 		},
 		{
 			"island" : "Sefrou-Ramal",
 			"sqm": "Sefrou-Ramal",
 			"mod" : "IFA3 d",
 			"replace" : {},
-			"name" : "co10_Escape_IFA3_UK_vs_GER"
+			"name" : "co15_Escape_IFA3_UK_vs_GER"
 		},
 		{
 			"island" : "Dingor",

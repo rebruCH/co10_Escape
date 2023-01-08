@@ -182,7 +182,7 @@
 			"sqm": "Mutambara",
 			"mod" : "WS NATO Desert vs SFIA-Tura",
 			"replace" : {},
-			"name" : "co10_Escape_WS_NATO_Desert_vs_SFIA_and_Tura"
+			"name" : "co15_Escape_WS_NATO_Desert_vs_SFIA_and_Tura"
 		},
 		{
 			"island" : "Altis",
@@ -322,7 +322,7 @@
 			"sqm": "Mutambara",
 			"mod" : "WS SFIA vs NATO Desert-ION PMC",
 			"replace" : {},
-			"name" : "co10_Escape_WS_SFIA_vs_NATO_Desert_and_ION_PMC"
+			"name" : "co15_Escape_WS_SFIA_vs_NATO_Desert_and_ION_PMC"
 		}
 	],
 	"Addons" : [
